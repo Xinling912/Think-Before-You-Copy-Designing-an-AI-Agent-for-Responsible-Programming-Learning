@@ -1,0 +1,7 @@
+data/raw/** linguist-vendored -whitespace
+data/processed/** linguist-generated
+data/indexes/** linguist-generated
+frontend/dist/** linguist-generated -whitespace
+services/api-gateway-go/internal/web/dist/** linguist-generated -whitespace
+*.sh text eol=lf
+Dockerfile text eol=lf

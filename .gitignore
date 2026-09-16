@@ -1,0 +1,48 @@
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+**/.DS_Store
+
+# Local dependency/tool caches
+.tools/
+node_modules/
+frontend/node_modules/
+.worktrees/
+.superpowers/sdd/
+
+# Python caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Umi/local frontend cache
+frontend/src/.umi/
+frontend/src/.umi-production/
+
+# Local build/runtime artifacts
+tmp/
+data/runtime/
+services/api-gateway-go/responsible-api
+services/api-gateway-go/*.db
+*.db
+
+# Research data retained outside the public portfolio repository
+research/**/raw-data/
+research/**/*participant*
+research/**/*response*
+
+# IDE metadata and local reports
+.idea/
+.vscode/
+test-results/
+playwright-report/
+
+# Local-only tunnel tooling (not part of the EduAgent repository or deployment)
+natapp.exe
+natapp.err.log
+natapp.log
+run_natapp.bat
