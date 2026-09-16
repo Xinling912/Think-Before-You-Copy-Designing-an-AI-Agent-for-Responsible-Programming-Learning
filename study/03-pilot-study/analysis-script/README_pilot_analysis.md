@@ -6,9 +6,9 @@ EviAgent pilot study.
 
 ## Inputs
 
-- `../data/pilotStudyResponses.csv`
-- The CSV can be regenerated from the CloudBase JSON export with
-  `pilot_json_to_csv.py`.
+- `../data/pilotStudyResponses.csv` in the authorized research workspace
+- The participant-level CSV is retained in the private OSF archive and is not
+  included in public GitHub because the pilot sample is small.
 
 ## Analysis rules
 
@@ -31,24 +31,22 @@ EviAgent pilot study.
 
 ## Run
 
-From the `pilotStudy/scripts` directory:
+From this directory, after providing the authorized input file:
 
 ```powershell
-python analyze_pilot_study.py
-node build_pilot_analysis_workbook.mjs
+python analyze_pilot_study.py "path/to/pilotStudyResponses.csv" "reproduced_output"
 ```
 
-The Node step requires `@oai/artifact-tool` to be available as described by
-the Codex workspace runtime.
+The public repository includes the Python analysis workflow used to generate
+the aggregate outputs. Local workbook-formatting utilities are not required to
+review the published evidence.
 
 ## Main outputs
 
-- `../analysis_outputs/pilot_task_helpfulness.pdf`
-- `../analysis_outputs/pilot_poststudy_agreement.pdf`
-- `../analysis_outputs/pilot_analysis.xlsx`
-- `../analysis_outputs/pilot_rating_summary.csv`
-- `../analysis_outputs/qualitative_coding.csv`
-- `../analysis_outputs/theme_summary.csv`
+- `reproduced_output/pilot_task_helpfulness.pdf`
+- `reproduced_output/pilot_poststudy_agreement.pdf`
+- `reproduced_output/pilot_rating_summary.csv`
+- `reproduced_output/theme_summary.csv`
 
-The Excel workbook also preserves raw data, task-specific ratings, participant
-characteristics, the complete coding table, and the analysis definitions.
+Participant-level task ratings, characteristics, and the complete coding table
+remain in the controlled research archive.

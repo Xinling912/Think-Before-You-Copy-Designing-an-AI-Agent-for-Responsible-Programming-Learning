@@ -31,9 +31,11 @@ services/api-gateway-go/*.db
 *.db
 
 # Research data retained outside the public portfolio repository
-research/**/raw-data/
-research/**/*participant*
-research/**/*response*
+study/**/original-data/
+study/**/raw-data/
+study/**/*participant*
+study/**/*response*
+study/**/*.jsonl
 
 # IDE metadata and local reports
 .idea/

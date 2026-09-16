@@ -10,9 +10,10 @@
   figures.
 - `Quantitative Figures` contains the two dimension-level Likert figures.
 - `Descriptive_Statistics_Report.pdf` summarizes Part A for the 40 complete cases.
-- `Thematic Analysis` contains the deidentified coding workbook and final paper
-  table for written explanations and C5 suggestions.
+- `thematic_summary.csv` reports theme-level counts without participant labels,
+  quotations, or open-text responses. The detailed coding workbook is retained
+  in the private OSF archive.
 
 The quantitative figures were generated in Python from the 40 complete cases.
-The thematic coding workbook documents the analysis trail from participant-level
-meaning units to codes and themes.
+The public thematic summary documents the final themes and counts while keeping
+the participant-level coding trail out of the public portfolio.

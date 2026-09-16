@@ -4,7 +4,7 @@
 
 This repository presents **EviAgent**, a research prototype that helps novice Python learners think before accepting AI-generated answers. Instead of acting as a direct solution generator, the system combines progressive pedagogical guidance, a curriculum knowledge graph, retrieval-augmented evidence, learner-state memory, and formative practice.
 
-The project was developed through the 2026 Summer Undergraduate Research Fellowship (SURF) at Xi'an Jiaotong-Liverpool University. It combines a formative questionnaire study, an implemented full-stack prototype, and a small pilot study.
+The project was completed in 2026 through the Summer Undergraduate Research Fellowship (SURF) at Xi'an Jiaotong-Liverpool University by **Xinling Du and Jinyu Cai under academic supervision**. Xinling Du led the formative study and pilot study; Jinyu Cai led the EviAgent development. The project combines a formative questionnaire study, an implemented full-stack prototype, and a small pilot study.
 
 > Research artefact notice: the pilot evidence is descriptive and preliminary. It supports design refinement, not causal or population-level claims.
 
@@ -45,13 +45,20 @@ The prototype is a three-part system:
 
 The repository also includes a Docker deployment, evaluation harnesses, automated checks, curriculum graph definitions, and the processed corpus/index required by the demo.
 
-![System pipeline](pipeline.png)
+![System pipeline](docs/pipeline.png)
 
 More detail is available in [the architecture document](docs/architecture.md) and the [paper-to-implementation matrix](docs/research/paper_to_implementation_matrix.md).
 
 ## Repository map
 
+The public portfolio mirrors the study flow used in the OSF archive. The system
+implementation stays in its runnable root paths and is indexed from stage 02.
+
 ```text
+study/
+  01-formative-study/         Instrument, analysis code, and aggregate results
+  02-eviagent-system/         Map to the runnable implementation
+  03-pilot-study/             Protocol, instrument, code, and aggregate results
 frontend/                    React/TypeScript interface and UI tests
 services/ai-core-python/     Pedagogy, RAG, KG, memory, and model orchestration
 services/api-gateway-go/     API, persistence, research endpoints, and migrations
@@ -60,7 +67,6 @@ data/processed/              Cleaned public learning corpus
 data/indexes/                Retrieval indexes used by the prototype
 harness/                     Reproducible evaluation cases
 scripts/                     Corpus, KG, evaluation, and integrity tooling
-research/                    Formative and pilot study public artefacts
 docs/                        Design, research rationale, and runbooks
 showcase/                    Poster and selected interface figures
 ```
@@ -81,13 +87,14 @@ The API key is read only from the local `.env` or deployment secret store. It mu
 
 ## Research artefacts
 
-The [`research/`](research/) folder contains a deliberately compact public record:
+The [`study/`](study/) folder contains a deliberately compact public record:
 
-- the formative questionnaire instrument, aggregate analysis tables and figures, and analysis code;
-- the pilot protocol and instrument, aggregate descriptive results, and analysis code;
-- no names, contact details, credentials, live database endpoints, or participant-level raw exports.
+- [`01-formative-study/`](study/01-formative-study/) contains the questionnaire instrument, aggregate quantitative and qualitative findings, and analysis code;
+- [`02-eviagent-system/`](study/02-eviagent-system/) maps the OSF system stage to the runnable source tree;
+- [`03-pilot-study/`](study/03-pilot-study/) contains the pilot protocol and instrument, aggregate descriptive results, and analysis code;
+- participant-level exports and open-text response workbooks remain outside the public repository.
 
-The project archive is also available on [OSF](https://osf.io/fuvkd/overview).
+The corresponding research archive is on [OSF](https://osf.io/fuvkd/overview). Access is governed separately by the OSF project's visibility settings.
 
 Headline pilot observations from six undergraduates were encouraging but preliminary: 5/6 perceived guided thinking, 6/6 perceived reliability support, and 6/6 reported support for programming understanding. Across two tasks, 11/12 agent ratings and 12/12 knowledge-graph ratings were positive.
 
@@ -98,7 +105,13 @@ Headline pilot observations from six undergraduates were encouraging but prelimi
 - The public demo uses ephemeral SQLite storage and is not intended for production or sensitive research data collection.
 - See [`docs/source-attribution.md`](docs/source-attribution.md) for corpus provenance and attribution.
 
+## Team contributions
+
+- **Xinling Du:** formative-study design and materials, data preparation and analysis, pilot-study design and analysis, and research reporting.
+- **Jinyu Cai:** primary development of the EviAgent system.
+- **Both students:** research framing, iterative design discussions, and project communication under academic supervision.
+
 ## SURF poster
 
-The final project poster is available at [`showcase/SURF-2026-poster.jpg`](showcase/SURF-2026-poster.jpg).
+The final project poster is available as [`PDF`](showcase/SURF-2026-poster.pdf) and [`JPG`](showcase/SURF-2026-poster.jpg).
 
