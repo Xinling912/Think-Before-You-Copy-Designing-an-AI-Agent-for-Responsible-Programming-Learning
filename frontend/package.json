@@ -1,0 +1,34 @@
+{
+  "name": "responsible-edu-agent-frontend",
+  "private": true,
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "sync:go": "node ../scripts/sync_frontend_dist.mjs",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "test:e2e:kg": "playwright test tests/kg-world.spec.ts"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/pro-components": "^2.8.10",
+    "@antv/g6": "5.1.1",
+    "@umijs/max": "^4.5.0",
+    "antd": "^5.22.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^28.0.0",
+    "playwright": "^1.61.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.7",
+    "vitest": "^4.1.9"
+  }
+}

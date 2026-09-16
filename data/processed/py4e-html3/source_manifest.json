@@ -1,0 +1,15 @@
+{
+  "source_id": "py4e-html3",
+  "display_name": "Python for Everybody HTML3",
+  "start_url": "https://www.py4e.com/html3/",
+  "language": "en",
+  "license_note": "creative-commons-source",
+  "publish_full_text": true,
+  "raw_manifest": "data/raw/py4e-html3/source_manifest.json",
+  "section_count": 215,
+  "chunk_count": 275,
+  "files": {
+    "sections_jsonl": "data/processed/py4e-html3/sections.jsonl",
+    "chunks_jsonl": "data/processed/py4e-html3/chunks.jsonl"
+  }
+}

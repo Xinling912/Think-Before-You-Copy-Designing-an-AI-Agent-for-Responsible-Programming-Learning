@@ -1,0 +1,22 @@
+{
+  "name": "python-docs-tutorial-glossary",
+  "version": "3.14.6",
+  "download_url": "https://docs.python.org/3/archives/python-3.14-docs-html.zip",
+  "raw_archive": "data/raw/python-docs-3.14.6/archive/python-3.14-docs-html.zip",
+  "raw_archive_sha256": "71db29956869d75cc138d251a3d011fee8019913b28da73d7717dd760b94048a",
+  "raw_html_root": "data/raw/python-docs-3.14.6/html/python-3.14-docs-html",
+  "processed_outputs": {
+    "sections_jsonl": "data/processed/python-docs-3.14.6/sections.jsonl",
+    "chunks_jsonl": "data/processed/python-docs-3.14.6/chunks.jsonl",
+    "glossary_terms_jsonl": "data/processed/python-docs-3.14.6/glossary_terms.jsonl"
+  },
+  "counts": {
+    "sections": 132,
+    "chunks": 169,
+    "glossary_terms": 173
+  },
+  "license": "Python Software Foundation License",
+  "source_home": "https://docs.python.org/3/",
+  "source_tutorial": "https://docs.python.org/3/tutorial/index.html",
+  "source_glossary": "https://docs.python.org/3/glossary.html"
+}

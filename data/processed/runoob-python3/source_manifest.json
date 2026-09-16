@@ -1,0 +1,15 @@
+{
+  "source_id": "runoob-python3",
+  "display_name": "菜鸟教程 Python3 教程",
+  "start_url": "https://www.runoob.com/python3/python3-tutorial.html",
+  "language": "zh",
+  "license_note": "private-development-full-copy",
+  "publish_full_text": true,
+  "raw_manifest": "data/raw/runoob-python3/source_manifest.json",
+  "section_count": 1327,
+  "chunk_count": 1330,
+  "files": {
+    "sections_jsonl": "data/processed/runoob-python3/sections.jsonl",
+    "chunks_jsonl": "data/processed/runoob-python3/chunks.jsonl"
+  }
+}

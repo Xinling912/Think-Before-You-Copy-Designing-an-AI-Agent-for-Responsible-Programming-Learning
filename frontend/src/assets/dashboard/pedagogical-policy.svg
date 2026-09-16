@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-label="Stage 06 Pedagogical Policy flow diagram">
+  <rect width="1100" height="620" fill="#FFFFFF"/>
+  <rect x="24" y="24" width="1052" height="572" rx="8" fill="#FFFFFF" stroke="#D9DCE3" stroke-width="2"/>
+  <rect x="54" y="54" width="104" height="48" rx="4" fill="#0F172A"/>
+  <text x="106" y="86" text-anchor="middle" font-size="25" font-weight="900" fill="#FFFFFF">06</text>
+  <text x="184" y="87" font-size="35" font-weight="900" fill="#111827">Pedagogical Policy</text>
+  <line x1="54" y1="126" x2="1046" y2="126" stroke="#D9DCE3" stroke-width="2"/>
+  
+    <rect x="64" y="168" width="286" height="362" rx="6" fill="#FFFFFF" stroke="#002FA7" stroke-width="2"/>
+    <rect x="64" y="168" width="286" height="58" rx="6" fill="#DCEAFF"/>
+    <text x="207" y="205" text-anchor="middle" font-size="25" font-weight="900" fill="#111827">Upstream</text>
+    
+    <rect x="82" y="258" width="250" height="92" rx="4" fill="#EEF4FF" stroke="#002FA7" stroke-width="4"/>
+    <text x="207" y="296" text-anchor="middle" font-size="25" font-weight="800" fill="#111827"><tspan x="207" dy="0">Intent + evidence</tspan></text>
+    <line x1="207" y1="350" x2="207" y2="393" stroke="#002FA7" stroke-width="4"/>
+    <polygon points="199,393 215,393 207,409" fill="#002FA7"/>
+    
+    <rect x="82" y="410" width="250" height="92" rx="4" fill="#EEF4FF" stroke="#002FA7" stroke-width="4"/>
+    <text x="207" y="448" text-anchor="middle" font-size="25" font-weight="800" fill="#111827"><tspan x="207" dy="0">Workflow state</tspan></text>
+  
+    <rect x="407" y="168" width="286" height="362" rx="6" fill="#FFFFFF" stroke="#FF4F00" stroke-width="2"/>
+    <rect x="407" y="168" width="286" height="58" rx="6" fill="#FFE0CC"/>
+    <text x="550" y="205" text-anchor="middle" font-size="25" font-weight="900" fill="#111827">This Stage</text>
+    
+    <rect x="425" y="258" width="250" height="92" rx="4" fill="#FFF4EA" stroke="#FF4F00" stroke-width="4"/>
+    <text x="550" y="296" text-anchor="middle" font-size="25" font-weight="800" fill="#111827"><tspan x="550" dy="0">Choose teaching</tspan><tspan x="550" dy="33">skill</tspan></text>
+    <line x1="550" y1="350" x2="550" y2="393" stroke="#FF4F00" stroke-width="4"/>
+    <polygon points="542,393 558,393 550,409" fill="#FF4F00"/>
+    
+    <rect x="425" y="410" width="250" height="92" rx="4" fill="#FFF4EA" stroke="#FF4F00" stroke-width="4"/>
+    <text x="550" y="448" text-anchor="middle" font-size="25" font-weight="800" fill="#111827"><tspan x="550" dy="0">Set answer</tspan><tspan x="550" dy="33">guardrails</tspan></text>
+  
+    <rect x="750" y="168" width="286" height="362" rx="6" fill="#FFFFFF" stroke="#00875A" stroke-width="2"/>
+    <rect x="750" y="168" width="286" height="58" rx="6" fill="#D7F7E7"/>
+    <text x="893" y="205" text-anchor="middle" font-size="25" font-weight="900" fill="#111827">Downstream</text>
+    
+    <rect x="768" y="258" width="250" height="92" rx="4" fill="#ECFDF5" stroke="#00875A" stroke-width="4"/>
+    <text x="893" y="296" text-anchor="middle" font-size="25" font-weight="800" fill="#111827"><tspan x="893" dy="0">Hint level + next</tspan><tspan x="893" dy="33">action</tspan></text>
+    <line x1="893" y1="350" x2="893" y2="393" stroke="#00875A" stroke-width="4"/>
+    <polygon points="885,393 901,393 893,409" fill="#00875A"/>
+    
+    <rect x="768" y="410" width="250" height="92" rx="4" fill="#ECFDF5" stroke="#00875A" stroke-width="4"/>
+    <text x="893" y="448" text-anchor="middle" font-size="25" font-weight="800" fill="#111827"><tspan x="893" dy="0">Direct-answer flag</tspan></text>
+  <line x1="350" y1="349" x2="397" y2="349" stroke="#002FA7" stroke-width="4"/>
+  <polygon points="397,349 379,339 379,359" fill="#002FA7"/>
+  <line x1="693" y1="349" x2="740" y2="349" stroke="#002FA7" stroke-width="4"/>
+  <polygon points="740,349 722,339 722,359" fill="#002FA7"/>
+  <text x="550" y="572" text-anchor="middle" font-size="19" font-weight="700" fill="#6B7280">ResponsibleEduAgent teaching loop</text>
+</svg>

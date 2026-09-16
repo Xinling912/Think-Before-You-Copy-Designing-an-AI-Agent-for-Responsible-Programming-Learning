@@ -1,0 +1,8 @@
+Name: responsible-api
+Host: 0.0.0.0
+Port: 8080
+Timeout: 45000
+AICoreURL: http://127.0.0.1:9000
+SQLiteDSN: /app/runtime/responsible-edu-agent.db
+CorpusDir: data/processed
+SeedDemoData: true

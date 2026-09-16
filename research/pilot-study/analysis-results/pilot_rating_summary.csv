@@ -1,0 +1,8 @@
+﻿Item,Unit,N,Median,Min,Max,Rating_1_count,Rating_1_pct,Rating_2_count,Rating_2_pct,Rating_3_count,Rating_3_pct,Rating_4_count,Rating_4_pct,Rating_5_count,Rating_5_pct,Positive_count,Positive_pct
+Entire agent helpfulness,12 task-level ratings,12,4.0,3,5,0,0.0,0,0.0,1,0.08333333333333333,8,0.6666666666666666,3,0.25,11,0.9166666666666666
+Knowledge graph helpfulness,12 task-level ratings,12,5.0,4,5,0,0.0,0,0.0,0,0.0,5,0.4166666666666667,7,0.5833333333333334,12,1.0
+G1: Guided tutoring,6 participants,6,5.0,3,5,0,0.0,0,0.0,1,0.16666666666666666,1,0.16666666666666666,4,0.6666666666666666,5,0.8333333333333334
+G2: Reliability judgment,6 participants,6,4.5,4,5,0,0.0,0,0.0,0,0.0,3,0.5,3,0.5,6,1.0
+G3: Programming understanding,6 participants,6,4.5,4,5,0,0.0,0,0.0,0,0.0,3,0.5,3,0.5,6,1.0
+Interaction clarity,6 participants,6,5.0,3,5,0,0.0,0,0.0,1,0.16666666666666666,1,0.16666666666666666,4,0.6666666666666666,5,0.8333333333333334
+Future use intention,6 participants,6,5.0,4,5,0,0.0,0,0.0,0,0.0,1,0.16666666666666666,5,0.8333333333333334,6,1.0

@@ -1,0 +1,6 @@
+fastapi==0.115.6
+faiss-cpu==1.14.3
+httpx==0.28.1
+pytest==8.3.4
+PyYAML==6.0.2
+uvicorn==0.34.0

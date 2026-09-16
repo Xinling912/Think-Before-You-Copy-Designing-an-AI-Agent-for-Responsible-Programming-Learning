@@ -1,0 +1,25 @@
+id: index-error-demo
+scenario: Python list IndexError learning support
+required_kg_nodes:
+  - Concept:list
+  - Concept:index
+  - Concept:zero_based_index
+  - ErrorType:IndexError
+required_skills:
+  - retrieve-first-gate
+  - progressive-hint-ladder
+  - stuck-and-error-diagnosis-coach
+  - confidence-calibration-check
+  - teach-back-evaluator
+privacy_forbidden_fields:
+  - openid
+  - wechat
+  - ip
+  - phone
+  - real_name
+must_capture:
+  - student_attempt_required
+  - confidence_before
+  - hint_level_reached
+  - teach_back_text
+

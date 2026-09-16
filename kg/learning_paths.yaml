@@ -1,0 +1,1441 @@
+paths:
+  - id: "path-program-foundations-01-program"
+    label_en: "program learning route 1"
+    topic: "program-foundations"
+    upstream: ["Concept:input", "Concept:output_print"]
+    focus: ["Concept:program"]
+    downstream: ["Concept:statement", "Concept:expression"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-02-statement"
+    label_en: "statement learning route 2"
+    topic: "program-foundations"
+    upstream: ["Concept:program"]
+    focus: ["Concept:statement"]
+    downstream: ["Concept:expression", "Concept:variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-03-expression"
+    label_en: "expression learning route 3"
+    topic: "program-foundations"
+    upstream: ["Concept:program", "Concept:statement"]
+    focus: ["Concept:expression"]
+    downstream: ["Concept:variable", "Concept:assignment"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-04-variable"
+    label_en: "variable learning route 4"
+    topic: "program-foundations"
+    upstream: ["Concept:statement", "Concept:expression"]
+    focus: ["Concept:variable"]
+    downstream: ["Concept:assignment", "Concept:name_binding"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-05-assignment"
+    label_en: "assignment learning route 5"
+    topic: "program-foundations"
+    upstream: ["Concept:expression", "Concept:variable"]
+    focus: ["Concept:assignment"]
+    downstream: ["Concept:name_binding", "Concept:comment"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-06-name_binding"
+    label_en: "name binding learning route 6"
+    topic: "program-foundations"
+    upstream: ["Concept:variable", "Concept:assignment"]
+    focus: ["Concept:name_binding"]
+    downstream: ["Concept:comment", "Concept:indentation"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-07-comment"
+    label_en: "comment learning route 7"
+    topic: "program-foundations"
+    upstream: ["Concept:assignment", "Concept:name_binding"]
+    focus: ["Concept:comment"]
+    downstream: ["Concept:indentation", "Concept:input"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-08-indentation"
+    label_en: "indentation learning route 8"
+    topic: "program-foundations"
+    upstream: ["Concept:name_binding", "Concept:comment"]
+    focus: ["Concept:indentation"]
+    downstream: ["Concept:input", "Concept:output_print"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-09-input"
+    label_en: "input learning route 9"
+    topic: "program-foundations"
+    upstream: ["Concept:comment", "Concept:indentation"]
+    focus: ["Concept:input"]
+    downstream: ["Concept:output_print"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-10-output_print"
+    label_en: "print output learning route 10"
+    topic: "program-foundations"
+    upstream: ["Concept:indentation", "Concept:input"]
+    focus: ["Concept:output_print"]
+    downstream: ["Concept:expression", "Concept:variable", "Concept:assignment"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-11-program"
+    label_en: "program learning route 11"
+    topic: "program-foundations"
+    upstream: ["Concept:input", "Concept:output_print"]
+    focus: ["Concept:program"]
+    downstream: ["Concept:statement", "Concept:expression", "Concept:variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-12-statement"
+    label_en: "statement learning route 12"
+    topic: "program-foundations"
+    upstream: ["Concept:program"]
+    focus: ["Concept:statement"]
+    downstream: ["Concept:expression", "Concept:variable", "Concept:assignment"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-13-expression"
+    label_en: "expression learning route 13"
+    topic: "program-foundations"
+    upstream: ["Concept:program", "Concept:statement"]
+    focus: ["Concept:expression"]
+    downstream: ["Concept:variable", "Concept:assignment", "Concept:name_binding"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-14-variable"
+    label_en: "variable learning route 14"
+    topic: "program-foundations"
+    upstream: ["Concept:program", "Concept:statement", "Concept:expression"]
+    focus: ["Concept:variable"]
+    downstream: ["Concept:assignment", "Concept:name_binding", "Concept:comment"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-15-assignment"
+    label_en: "assignment learning route 15"
+    topic: "program-foundations"
+    upstream: ["Concept:statement", "Concept:expression", "Concept:variable"]
+    focus: ["Concept:assignment"]
+    downstream: ["Concept:name_binding", "Concept:comment", "Concept:indentation"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-program-foundations-16-name_binding"
+    label_en: "name binding learning route 16"
+    topic: "program-foundations"
+    upstream: ["Concept:expression", "Concept:variable", "Concept:assignment"]
+    focus: ["Concept:name_binding"]
+    downstream: ["Concept:comment", "Concept:indentation", "Concept:input"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-01-object"
+    label_en: "object learning route 1"
+    topic: "types-and-values"
+    upstream: ["Concept:expression", "Concept:variable"]
+    focus: ["Concept:object"]
+    downstream: ["Concept:type", "Concept:int"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-02-type"
+    label_en: "type learning route 2"
+    topic: "types-and-values"
+    upstream: ["Concept:object"]
+    focus: ["Concept:type"]
+    downstream: ["Concept:int", "Concept:float"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-03-int"
+    label_en: "int learning route 3"
+    topic: "types-and-values"
+    upstream: ["Concept:object", "Concept:type"]
+    focus: ["Concept:int"]
+    downstream: ["Concept:float", "Concept:complex"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-04-float"
+    label_en: "float learning route 4"
+    topic: "types-and-values"
+    upstream: ["Concept:type", "Concept:int"]
+    focus: ["Concept:float"]
+    downstream: ["Concept:complex", "Concept:boolean"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-05-complex"
+    label_en: "complex learning route 5"
+    topic: "types-and-values"
+    upstream: ["Concept:int", "Concept:float"]
+    focus: ["Concept:complex"]
+    downstream: ["Concept:boolean", "Concept:none"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-06-boolean"
+    label_en: "boolean learning route 6"
+    topic: "types-and-values"
+    upstream: ["Concept:float", "Concept:complex"]
+    focus: ["Concept:boolean"]
+    downstream: ["Concept:none", "Concept:string"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-07-none"
+    label_en: "None learning route 7"
+    topic: "types-and-values"
+    upstream: ["Concept:complex", "Concept:boolean"]
+    focus: ["Concept:none"]
+    downstream: ["Concept:string", "Concept:type_conversion"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-08-string"
+    label_en: "string learning route 8"
+    topic: "types-and-values"
+    upstream: ["Concept:boolean", "Concept:none"]
+    focus: ["Concept:string"]
+    downstream: ["Concept:type_conversion", "Concept:operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-09-type_conversion"
+    label_en: "type conversion learning route 9"
+    topic: "types-and-values"
+    upstream: ["Concept:none", "Concept:string"]
+    focus: ["Concept:type_conversion"]
+    downstream: ["Concept:operator", "Concept:arithmetic_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-10-operator"
+    label_en: "operator learning route 10"
+    topic: "types-and-values"
+    upstream: ["Concept:string", "Concept:type_conversion"]
+    focus: ["Concept:operator"]
+    downstream: ["Concept:arithmetic_operator", "Concept:comparison_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-11-arithmetic_operator"
+    label_en: "arithmetic operator learning route 11"
+    topic: "types-and-values"
+    upstream: ["Concept:type_conversion", "Concept:operator"]
+    focus: ["Concept:arithmetic_operator"]
+    downstream: ["Concept:comparison_operator", "Concept:logical_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-12-comparison_operator"
+    label_en: "comparison operator learning route 12"
+    topic: "types-and-values"
+    upstream: ["Concept:operator", "Concept:arithmetic_operator"]
+    focus: ["Concept:comparison_operator"]
+    downstream: ["Concept:logical_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-13-logical_operator"
+    label_en: "logical operator learning route 13"
+    topic: "types-and-values"
+    upstream: ["Concept:arithmetic_operator", "Concept:comparison_operator"]
+    focus: ["Concept:logical_operator"]
+    downstream: ["Concept:type", "Concept:operator", "Concept:type_conversion"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-14-object"
+    label_en: "object learning route 14"
+    topic: "types-and-values"
+    upstream: ["Concept:expression", "Concept:variable"]
+    focus: ["Concept:object"]
+    downstream: ["Concept:type", "Concept:int", "Concept:float"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-15-type"
+    label_en: "type learning route 15"
+    topic: "types-and-values"
+    upstream: ["Concept:object"]
+    focus: ["Concept:type"]
+    downstream: ["Concept:int", "Concept:float", "Concept:complex"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-16-int"
+    label_en: "int learning route 16"
+    topic: "types-and-values"
+    upstream: ["Concept:object", "Concept:type"]
+    focus: ["Concept:int"]
+    downstream: ["Concept:float", "Concept:complex", "Concept:boolean"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-17-float"
+    label_en: "float learning route 17"
+    topic: "types-and-values"
+    upstream: ["Concept:object", "Concept:type", "Concept:int"]
+    focus: ["Concept:float"]
+    downstream: ["Concept:complex", "Concept:boolean", "Concept:none"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-18-complex"
+    label_en: "complex learning route 18"
+    topic: "types-and-values"
+    upstream: ["Concept:type", "Concept:int", "Concept:float"]
+    focus: ["Concept:complex"]
+    downstream: ["Concept:boolean", "Concept:none", "Concept:string"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-19-boolean"
+    label_en: "boolean learning route 19"
+    topic: "types-and-values"
+    upstream: ["Concept:int", "Concept:float", "Concept:complex"]
+    focus: ["Concept:boolean"]
+    downstream: ["Concept:none", "Concept:string", "Concept:type_conversion"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-20-none"
+    label_en: "None learning route 20"
+    topic: "types-and-values"
+    upstream: ["Concept:float", "Concept:complex", "Concept:boolean"]
+    focus: ["Concept:none"]
+    downstream: ["Concept:string", "Concept:type_conversion", "Concept:operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-21-string"
+    label_en: "string learning route 21"
+    topic: "types-and-values"
+    upstream: ["Concept:complex", "Concept:boolean", "Concept:none"]
+    focus: ["Concept:string"]
+    downstream: ["Concept:type_conversion", "Concept:operator", "Concept:arithmetic_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-22-type_conversion"
+    label_en: "type conversion learning route 22"
+    topic: "types-and-values"
+    upstream: ["Concept:boolean", "Concept:none", "Concept:string"]
+    focus: ["Concept:type_conversion"]
+    downstream: ["Concept:operator", "Concept:arithmetic_operator", "Concept:comparison_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-23-operator"
+    label_en: "operator learning route 23"
+    topic: "types-and-values"
+    upstream: ["Concept:none", "Concept:string", "Concept:type_conversion"]
+    focus: ["Concept:operator"]
+    downstream: ["Concept:arithmetic_operator", "Concept:comparison_operator", "Concept:logical_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-types-and-values-24-arithmetic_operator"
+    label_en: "arithmetic operator learning route 24"
+    topic: "types-and-values"
+    upstream: ["Concept:string", "Concept:type_conversion", "Concept:operator"]
+    focus: ["Concept:arithmetic_operator"]
+    downstream: ["Concept:comparison_operator", "Concept:logical_operator"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/introduction.html#an-informal-introduction-to-python"
+    evidence_chunk_ids: ["python-docs-3.14.6-39f485361f74"]
+  - id: "path-collections-and-access-01-sequence"
+    label_en: "sequence learning route 1"
+    topic: "collections-and-access"
+    upstream: ["Concept:object", "Concept:type"]
+    focus: ["Concept:sequence"]
+    downstream: ["Concept:list", "Concept:tuple"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-02-list"
+    label_en: "list learning route 2"
+    topic: "collections-and-access"
+    upstream: ["Concept:object", "Concept:type", "Concept:sequence"]
+    focus: ["Concept:list"]
+    downstream: ["Concept:index", "Concept:len", "Concept:mutability"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-03-tuple"
+    label_en: "tuple learning route 3"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list"]
+    focus: ["Concept:tuple"]
+    downstream: ["Concept:dict", "Concept:set"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-04-dict"
+    label_en: "dictionary learning route 4"
+    topic: "collections-and-access"
+    upstream: ["Concept:object", "Concept:type"]
+    focus: ["Concept:dict"]
+    downstream: ["Concept:key", "Concept:value", "Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-05-set"
+    label_en: "set learning route 5"
+    topic: "collections-and-access"
+    upstream: ["Concept:tuple", "Concept:dict"]
+    focus: ["Concept:set"]
+    downstream: ["Concept:key", "Concept:value"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-06-key"
+    label_en: "key learning route 6"
+    topic: "collections-and-access"
+    upstream: ["Concept:dict", "Concept:set"]
+    focus: ["Concept:key"]
+    downstream: ["Concept:value", "Concept:membership"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-07-value"
+    label_en: "value learning route 7"
+    topic: "collections-and-access"
+    upstream: ["Concept:set", "Concept:key"]
+    focus: ["Concept:value"]
+    downstream: ["Concept:membership", "Concept:index"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-08-membership"
+    label_en: "membership learning route 8"
+    topic: "collections-and-access"
+    upstream: ["Concept:key", "Concept:value"]
+    focus: ["Concept:membership"]
+    downstream: ["Concept:index", "Concept:zero_based_index"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-09-index"
+    label_en: "index learning route 9"
+    topic: "collections-and-access"
+    upstream: ["Concept:list", "Concept:sequence"]
+    focus: ["Concept:index"]
+    downstream: ["Concept:zero_based_index", "Concept:valid_index_range"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-10-zero_based_index"
+    label_en: "zero-based index learning route 10"
+    topic: "collections-and-access"
+    upstream: ["Concept:list", "Concept:index"]
+    focus: ["Concept:zero_based_index"]
+    downstream: ["Concept:valid_index_range", "ErrorType:IndexError"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-11-valid_index_range"
+    label_en: "valid index range learning route 11"
+    topic: "collections-and-access"
+    upstream: ["Concept:list", "Concept:zero_based_index", "Concept:len"]
+    focus: ["Concept:valid_index_range"]
+    downstream: ["ErrorType:IndexError", "Concept:debugging"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-12-slice"
+    label_en: "slice learning route 12"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:index"]
+    focus: ["Concept:slice"]
+    downstream: ["Concept:list_method", "Concept:mutability"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-13-len"
+    label_en: "len learning route 13"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list"]
+    focus: ["Concept:len"]
+    downstream: ["Concept:valid_index_range", "Concept:for_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-14-mutability"
+    label_en: "mutability learning route 14"
+    topic: "collections-and-access"
+    upstream: ["Concept:slice", "Concept:len"]
+    focus: ["Concept:mutability"]
+    downstream: ["Concept:list_method", "Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-15-list_method"
+    label_en: "list method learning route 15"
+    topic: "collections-and-access"
+    upstream: ["Concept:len", "Concept:mutability"]
+    focus: ["Concept:list_method"]
+    downstream: ["Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-16-dict_method"
+    label_en: "dict method learning route 16"
+    topic: "collections-and-access"
+    upstream: ["Concept:mutability", "Concept:list_method"]
+    focus: ["Concept:dict_method"]
+    downstream: ["Concept:sequence", "Concept:for_loop", "Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-17-sequence"
+    label_en: "sequence learning route 17"
+    topic: "collections-and-access"
+    upstream: ["Concept:object", "Concept:type"]
+    focus: ["Concept:sequence"]
+    downstream: ["Concept:list", "Concept:tuple", "Concept:dict"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-18-list"
+    label_en: "list learning route 18"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence"]
+    focus: ["Concept:list"]
+    downstream: ["Concept:tuple", "Concept:dict", "Concept:set"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-19-tuple"
+    label_en: "tuple learning route 19"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list"]
+    focus: ["Concept:tuple"]
+    downstream: ["Concept:dict", "Concept:set", "Concept:key"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-20-dict"
+    label_en: "dictionary learning route 20"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list", "Concept:tuple"]
+    focus: ["Concept:dict"]
+    downstream: ["Concept:set", "Concept:key", "Concept:value"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-21-set"
+    label_en: "set learning route 21"
+    topic: "collections-and-access"
+    upstream: ["Concept:list", "Concept:tuple", "Concept:dict"]
+    focus: ["Concept:set"]
+    downstream: ["Concept:key", "Concept:value", "Concept:membership"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-22-key"
+    label_en: "key learning route 22"
+    topic: "collections-and-access"
+    upstream: ["Concept:tuple", "Concept:dict", "Concept:set"]
+    focus: ["Concept:key"]
+    downstream: ["Concept:value", "Concept:membership", "Concept:index"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-23-value"
+    label_en: "value learning route 23"
+    topic: "collections-and-access"
+    upstream: ["Concept:dict", "Concept:set", "Concept:key"]
+    focus: ["Concept:value"]
+    downstream: ["Concept:membership", "Concept:index", "Concept:zero_based_index"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-24-membership"
+    label_en: "membership learning route 24"
+    topic: "collections-and-access"
+    upstream: ["Concept:set", "Concept:key", "Concept:value"]
+    focus: ["Concept:membership"]
+    downstream: ["Concept:index", "Concept:zero_based_index", "Concept:valid_index_range"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-25-index"
+    label_en: "index learning route 25"
+    topic: "collections-and-access"
+    upstream: ["Concept:key", "Concept:value", "Concept:membership"]
+    focus: ["Concept:index"]
+    downstream: ["Concept:zero_based_index", "Concept:valid_index_range", "Concept:slice"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-26-zero_based_index"
+    label_en: "zero-based index learning route 26"
+    topic: "collections-and-access"
+    upstream: ["Concept:value", "Concept:membership", "Concept:index"]
+    focus: ["Concept:zero_based_index"]
+    downstream: ["Concept:valid_index_range", "Concept:slice", "Concept:len"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-27-valid_index_range"
+    label_en: "valid index range learning route 27"
+    topic: "collections-and-access"
+    upstream: ["Concept:membership", "Concept:index", "Concept:zero_based_index"]
+    focus: ["Concept:valid_index_range"]
+    downstream: ["Concept:slice", "Concept:len", "Concept:mutability"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-28-slice"
+    label_en: "slice learning route 28"
+    topic: "collections-and-access"
+    upstream: ["Concept:index", "Concept:zero_based_index", "Concept:valid_index_range"]
+    focus: ["Concept:slice"]
+    downstream: ["Concept:len", "Concept:mutability", "Concept:list_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-29-len"
+    label_en: "len learning route 29"
+    topic: "collections-and-access"
+    upstream: ["Concept:zero_based_index", "Concept:valid_index_range", "Concept:slice"]
+    focus: ["Concept:len"]
+    downstream: ["Concept:mutability", "Concept:list_method", "Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-30-mutability"
+    label_en: "mutability learning route 30"
+    topic: "collections-and-access"
+    upstream: ["Concept:valid_index_range", "Concept:slice", "Concept:len"]
+    focus: ["Concept:mutability"]
+    downstream: ["Concept:list_method", "Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-31-list_method"
+    label_en: "list method learning route 31"
+    topic: "collections-and-access"
+    upstream: ["Concept:slice", "Concept:len", "Concept:mutability"]
+    focus: ["Concept:list_method"]
+    downstream: ["Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-32-dict_method"
+    label_en: "dict method learning route 32"
+    topic: "collections-and-access"
+    upstream: ["Concept:len", "Concept:mutability", "Concept:list_method"]
+    focus: ["Concept:dict_method"]
+    downstream: ["Concept:sequence", "Concept:for_loop", "Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-33-sequence"
+    label_en: "sequence learning route 33"
+    topic: "collections-and-access"
+    upstream: ["Concept:object", "Concept:type"]
+    focus: ["Concept:sequence"]
+    downstream: ["Concept:list", "Concept:tuple", "Concept:dict", "Concept:set"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-34-list"
+    label_en: "list learning route 34"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence"]
+    focus: ["Concept:list"]
+    downstream: ["Concept:tuple", "Concept:dict", "Concept:set", "Concept:key"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-35-tuple"
+    label_en: "tuple learning route 35"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list"]
+    focus: ["Concept:tuple"]
+    downstream: ["Concept:dict", "Concept:set", "Concept:key", "Concept:value"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-36-dict"
+    label_en: "dictionary learning route 36"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list", "Concept:tuple"]
+    focus: ["Concept:dict"]
+    downstream: ["Concept:set", "Concept:key", "Concept:value", "Concept:membership"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-37-set"
+    label_en: "set learning route 37"
+    topic: "collections-and-access"
+    upstream: ["Concept:sequence", "Concept:list", "Concept:tuple", "Concept:dict"]
+    focus: ["Concept:set"]
+    downstream: ["Concept:key", "Concept:value", "Concept:membership", "Concept:index"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-38-key"
+    label_en: "key learning route 38"
+    topic: "collections-and-access"
+    upstream: ["Concept:list", "Concept:tuple", "Concept:dict", "Concept:set"]
+    focus: ["Concept:key"]
+    downstream: ["Concept:value", "Concept:membership", "Concept:index", "Concept:zero_based_index"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-39-value"
+    label_en: "value learning route 39"
+    topic: "collections-and-access"
+    upstream: ["Concept:tuple", "Concept:dict", "Concept:set", "Concept:key"]
+    focus: ["Concept:value"]
+    downstream: ["Concept:membership", "Concept:index", "Concept:zero_based_index", "Concept:valid_index_range"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-collections-and-access-40-membership"
+    label_en: "membership learning route 40"
+    topic: "collections-and-access"
+    upstream: ["Concept:dict", "Concept:set", "Concept:key", "Concept:value"]
+    focus: ["Concept:membership"]
+    downstream: ["Concept:index", "Concept:zero_based_index", "Concept:valid_index_range", "Concept:slice"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/datastructures.html#data-structures"
+    evidence_chunk_ids: ["python-docs-3.14.6-625a41c14bac"]
+  - id: "path-control-flow-01-condition"
+    label_en: "condition learning route 1"
+    topic: "control-flow"
+    upstream: ["Concept:statement", "Concept:expression"]
+    focus: ["Concept:condition"]
+    downstream: ["Concept:if_statement", "Concept:elif_clause"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-02-if_statement"
+    label_en: "if statement learning route 2"
+    topic: "control-flow"
+    upstream: ["Concept:condition", "Concept:comparison_operator"]
+    focus: ["Concept:if_statement"]
+    downstream: ["Concept:elif_clause", "Concept:else_clause"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-03-elif_clause"
+    label_en: "elif clause learning route 3"
+    topic: "control-flow"
+    upstream: ["Concept:condition", "Concept:if_statement"]
+    focus: ["Concept:elif_clause"]
+    downstream: ["Concept:else_clause", "Concept:for_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-04-else_clause"
+    label_en: "else clause learning route 4"
+    topic: "control-flow"
+    upstream: ["Concept:if_statement", "Concept:elif_clause"]
+    focus: ["Concept:else_clause"]
+    downstream: ["Concept:for_loop", "Concept:while_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-05-for_loop"
+    label_en: "for loop learning route 5"
+    topic: "control-flow"
+    upstream: ["Concept:sequence", "Concept:list"]
+    focus: ["Concept:for_loop"]
+    downstream: ["Concept:loop_variable", "Concept:iteration", "Concept:range"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-06-while_loop"
+    label_en: "while loop learning route 6"
+    topic: "control-flow"
+    upstream: ["Concept:condition", "Concept:if_statement"]
+    focus: ["Concept:while_loop"]
+    downstream: ["Concept:iteration", "Concept:break", "Concept:continue"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-07-range"
+    label_en: "range learning route 7"
+    topic: "control-flow"
+    upstream: ["Concept:for_loop", "Concept:while_loop"]
+    focus: ["Concept:range"]
+    downstream: ["Concept:enumerate", "Concept:break"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-08-enumerate"
+    label_en: "enumerate learning route 8"
+    topic: "control-flow"
+    upstream: ["Concept:while_loop", "Concept:range"]
+    focus: ["Concept:enumerate"]
+    downstream: ["Concept:break", "Concept:continue"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-09-break"
+    label_en: "break learning route 9"
+    topic: "control-flow"
+    upstream: ["Concept:range", "Concept:enumerate"]
+    focus: ["Concept:break"]
+    downstream: ["Concept:continue", "Concept:loop_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-10-continue"
+    label_en: "continue learning route 10"
+    topic: "control-flow"
+    upstream: ["Concept:enumerate", "Concept:break"]
+    focus: ["Concept:continue"]
+    downstream: ["Concept:loop_variable", "Concept:iteration"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-11-loop_variable"
+    label_en: "loop variable learning route 11"
+    topic: "control-flow"
+    upstream: ["Concept:break", "Concept:continue"]
+    focus: ["Concept:loop_variable"]
+    downstream: ["Concept:iteration", "Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-12-iteration"
+    label_en: "iteration learning route 12"
+    topic: "control-flow"
+    upstream: ["Concept:continue", "Concept:loop_variable"]
+    focus: ["Concept:iteration"]
+    downstream: ["Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-13-list_comprehension"
+    label_en: "list comprehension learning route 13"
+    topic: "control-flow"
+    upstream: ["Concept:loop_variable", "Concept:iteration"]
+    focus: ["Concept:list_comprehension"]
+    downstream: ["Concept:condition", "Concept:function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-14-condition"
+    label_en: "condition learning route 14"
+    topic: "control-flow"
+    upstream: ["Concept:statement", "Concept:expression"]
+    focus: ["Concept:condition"]
+    downstream: ["Concept:if_statement", "Concept:elif_clause", "Concept:else_clause"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-15-if_statement"
+    label_en: "if statement learning route 15"
+    topic: "control-flow"
+    upstream: ["Concept:condition"]
+    focus: ["Concept:if_statement"]
+    downstream: ["Concept:elif_clause", "Concept:else_clause", "Concept:for_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-16-elif_clause"
+    label_en: "elif clause learning route 16"
+    topic: "control-flow"
+    upstream: ["Concept:condition", "Concept:if_statement"]
+    focus: ["Concept:elif_clause"]
+    downstream: ["Concept:else_clause", "Concept:for_loop", "Concept:while_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-17-else_clause"
+    label_en: "else clause learning route 17"
+    topic: "control-flow"
+    upstream: ["Concept:condition", "Concept:if_statement", "Concept:elif_clause"]
+    focus: ["Concept:else_clause"]
+    downstream: ["Concept:for_loop", "Concept:while_loop", "Concept:range"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-18-for_loop"
+    label_en: "for loop learning route 18"
+    topic: "control-flow"
+    upstream: ["Concept:if_statement", "Concept:elif_clause", "Concept:else_clause"]
+    focus: ["Concept:for_loop"]
+    downstream: ["Concept:while_loop", "Concept:range", "Concept:enumerate"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-19-while_loop"
+    label_en: "while loop learning route 19"
+    topic: "control-flow"
+    upstream: ["Concept:elif_clause", "Concept:else_clause", "Concept:for_loop"]
+    focus: ["Concept:while_loop"]
+    downstream: ["Concept:range", "Concept:enumerate", "Concept:break"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-20-range"
+    label_en: "range learning route 20"
+    topic: "control-flow"
+    upstream: ["Concept:else_clause", "Concept:for_loop", "Concept:while_loop"]
+    focus: ["Concept:range"]
+    downstream: ["Concept:enumerate", "Concept:break", "Concept:continue"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-21-enumerate"
+    label_en: "enumerate learning route 21"
+    topic: "control-flow"
+    upstream: ["Concept:for_loop", "Concept:while_loop", "Concept:range"]
+    focus: ["Concept:enumerate"]
+    downstream: ["Concept:break", "Concept:continue", "Concept:loop_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-22-break"
+    label_en: "break learning route 22"
+    topic: "control-flow"
+    upstream: ["Concept:while_loop", "Concept:range", "Concept:enumerate"]
+    focus: ["Concept:break"]
+    downstream: ["Concept:continue", "Concept:loop_variable", "Concept:iteration"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-23-continue"
+    label_en: "continue learning route 23"
+    topic: "control-flow"
+    upstream: ["Concept:range", "Concept:enumerate", "Concept:break"]
+    focus: ["Concept:continue"]
+    downstream: ["Concept:loop_variable", "Concept:iteration", "Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-24-loop_variable"
+    label_en: "loop variable learning route 24"
+    topic: "control-flow"
+    upstream: ["Concept:enumerate", "Concept:break", "Concept:continue"]
+    focus: ["Concept:loop_variable"]
+    downstream: ["Concept:iteration", "Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-25-iteration"
+    label_en: "iteration learning route 25"
+    topic: "control-flow"
+    upstream: ["Concept:break", "Concept:continue", "Concept:loop_variable"]
+    focus: ["Concept:iteration"]
+    downstream: ["Concept:list_comprehension"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-26-list_comprehension"
+    label_en: "list comprehension learning route 26"
+    topic: "control-flow"
+    upstream: ["Concept:continue", "Concept:loop_variable", "Concept:iteration"]
+    focus: ["Concept:list_comprehension"]
+    downstream: ["Concept:condition", "Concept:function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-27-condition"
+    label_en: "condition learning route 27"
+    topic: "control-flow"
+    upstream: ["Concept:statement", "Concept:expression"]
+    focus: ["Concept:condition"]
+    downstream: ["Concept:if_statement", "Concept:elif_clause", "Concept:else_clause", "Concept:for_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-control-flow-28-if_statement"
+    label_en: "if statement learning route 28"
+    topic: "control-flow"
+    upstream: ["Concept:condition"]
+    focus: ["Concept:if_statement"]
+    downstream: ["Concept:elif_clause", "Concept:else_clause", "Concept:for_loop", "Concept:while_loop"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-01-function"
+    label_en: "function learning route 1"
+    topic: "functions-and-modules"
+    upstream: ["Concept:statement", "Concept:variable"]
+    focus: ["Concept:function"]
+    downstream: ["Concept:function_definition", "Concept:function_call"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-02-function_definition"
+    label_en: "function definition learning route 2"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function", "Concept:parameter"]
+    focus: ["Concept:function_definition"]
+    downstream: ["Concept:return_value", "Concept:scope"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-03-function_call"
+    label_en: "function call learning route 3"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function", "Concept:argument"]
+    focus: ["Concept:function_call"]
+    downstream: ["Concept:return_value", "Concept:library_function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-04-parameter"
+    label_en: "parameter learning route 4"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function_definition"]
+    focus: ["Concept:parameter"]
+    downstream: ["Concept:argument", "Concept:default_argument"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-05-argument"
+    label_en: "argument learning route 5"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function_call", "Concept:parameter"]
+    focus: ["Concept:argument"]
+    downstream: ["Concept:default_argument", "Concept:return_value"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-06-default_argument"
+    label_en: "default argument learning route 6"
+    topic: "functions-and-modules"
+    upstream: ["Concept:parameter", "Concept:argument"]
+    focus: ["Concept:default_argument"]
+    downstream: ["Concept:return_value", "Concept:scope"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-07-return_value"
+    label_en: "return value learning route 7"
+    topic: "functions-and-modules"
+    upstream: ["Concept:argument", "Concept:default_argument"]
+    focus: ["Concept:return_value"]
+    downstream: ["Concept:scope", "Concept:local_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-08-scope"
+    label_en: "scope learning route 8"
+    topic: "functions-and-modules"
+    upstream: ["Concept:default_argument", "Concept:return_value"]
+    focus: ["Concept:scope"]
+    downstream: ["Concept:local_variable", "Concept:global_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-09-local_variable"
+    label_en: "local variable learning route 9"
+    topic: "functions-and-modules"
+    upstream: ["Concept:return_value", "Concept:scope"]
+    focus: ["Concept:local_variable"]
+    downstream: ["Concept:global_variable", "Concept:module"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-10-global_variable"
+    label_en: "global variable learning route 10"
+    topic: "functions-and-modules"
+    upstream: ["Concept:scope", "Concept:local_variable"]
+    focus: ["Concept:global_variable"]
+    downstream: ["Concept:module", "Concept:import_statement"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-11-module"
+    label_en: "module learning route 11"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function", "Concept:scope"]
+    focus: ["Concept:module"]
+    downstream: ["Concept:import_statement", "Concept:library_function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-12-import_statement"
+    label_en: "import statement learning route 12"
+    topic: "functions-and-modules"
+    upstream: ["Concept:global_variable", "Concept:module"]
+    focus: ["Concept:import_statement"]
+    downstream: ["Concept:library_function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-13-library_function"
+    label_en: "library function learning route 13"
+    topic: "functions-and-modules"
+    upstream: ["Concept:module", "Concept:import_statement"]
+    focus: ["Concept:library_function"]
+    downstream: ["Concept:function_call", "Concept:return_value"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-14-function"
+    label_en: "function learning route 14"
+    topic: "functions-and-modules"
+    upstream: ["Concept:statement", "Concept:variable"]
+    focus: ["Concept:function"]
+    downstream: ["Concept:function_definition", "Concept:function_call", "Concept:parameter"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-15-function_definition"
+    label_en: "function definition learning route 15"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function"]
+    focus: ["Concept:function_definition"]
+    downstream: ["Concept:function_call", "Concept:parameter", "Concept:argument"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-16-function_call"
+    label_en: "function call learning route 16"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function", "Concept:function_definition"]
+    focus: ["Concept:function_call"]
+    downstream: ["Concept:parameter", "Concept:argument", "Concept:default_argument"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-17-parameter"
+    label_en: "parameter learning route 17"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function", "Concept:function_definition", "Concept:function_call"]
+    focus: ["Concept:parameter"]
+    downstream: ["Concept:argument", "Concept:default_argument", "Concept:return_value"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-18-argument"
+    label_en: "argument learning route 18"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function_definition", "Concept:function_call", "Concept:parameter"]
+    focus: ["Concept:argument"]
+    downstream: ["Concept:default_argument", "Concept:return_value", "Concept:scope"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-19-default_argument"
+    label_en: "default argument learning route 19"
+    topic: "functions-and-modules"
+    upstream: ["Concept:function_call", "Concept:parameter", "Concept:argument"]
+    focus: ["Concept:default_argument"]
+    downstream: ["Concept:return_value", "Concept:scope", "Concept:local_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-20-return_value"
+    label_en: "return value learning route 20"
+    topic: "functions-and-modules"
+    upstream: ["Concept:parameter", "Concept:argument", "Concept:default_argument"]
+    focus: ["Concept:return_value"]
+    downstream: ["Concept:scope", "Concept:local_variable", "Concept:global_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-21-scope"
+    label_en: "scope learning route 21"
+    topic: "functions-and-modules"
+    upstream: ["Concept:argument", "Concept:default_argument", "Concept:return_value"]
+    focus: ["Concept:scope"]
+    downstream: ["Concept:local_variable", "Concept:global_variable", "Concept:module"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-22-local_variable"
+    label_en: "local variable learning route 22"
+    topic: "functions-and-modules"
+    upstream: ["Concept:default_argument", "Concept:return_value", "Concept:scope"]
+    focus: ["Concept:local_variable"]
+    downstream: ["Concept:global_variable", "Concept:module", "Concept:import_statement"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-23-global_variable"
+    label_en: "global variable learning route 23"
+    topic: "functions-and-modules"
+    upstream: ["Concept:return_value", "Concept:scope", "Concept:local_variable"]
+    focus: ["Concept:global_variable"]
+    downstream: ["Concept:module", "Concept:import_statement", "Concept:library_function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-functions-and-modules-24-module"
+    label_en: "module learning route 24"
+    topic: "functions-and-modules"
+    upstream: ["Concept:scope", "Concept:local_variable", "Concept:global_variable"]
+    focus: ["Concept:module"]
+    downstream: ["Concept:import_statement", "Concept:library_function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/controlflow.html#more-control-flow-tools"
+    evidence_chunk_ids: ["python-docs-3.14.6-9aac286789f6"]
+  - id: "path-errors-files-and-classes-01-traceback"
+    label_en: "traceback learning route 1"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:statement", "Concept:expression"]
+    focus: ["Concept:traceback"]
+    downstream: ["Concept:debugging", "ErrorType:SyntaxError"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-02-debugging"
+    label_en: "debugging learning route 2"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:traceback", "ErrorType:TypeError"]
+    focus: ["Concept:debugging"]
+    downstream: ["Concept:valid_index_range", "Concept:function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-03-file"
+    label_en: "file learning route 3"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:string", "Concept:variable"]
+    focus: ["Concept:file"]
+    downstream: ["Concept:file_open", "Concept:file_read"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-04-file_open"
+    label_en: "open a file learning route 4"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file", "Concept:string"]
+    focus: ["Concept:file_open"]
+    downstream: ["Concept:file_read", "Concept:file_write"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-05-file_read"
+    label_en: "read a file learning route 5"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file_open"]
+    focus: ["Concept:file_read"]
+    downstream: ["Concept:for_loop", "Concept:string"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-06-file_write"
+    label_en: "write a file learning route 6"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file_open", "Concept:string"]
+    focus: ["Concept:file_write"]
+    downstream: ["Concept:output_print", "Concept:function"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-07-class"
+    label_en: "class learning route 7"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:object", "Concept:function"]
+    focus: ["Concept:class"]
+    downstream: ["Concept:instance", "Concept:attribute"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/classes.html#classes"
+    evidence_chunk_ids: ["python-docs-3.14.6-a8747e58b4b9"]
+  - id: "path-errors-files-and-classes-08-instance"
+    label_en: "instance learning route 8"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:class"]
+    focus: ["Concept:instance"]
+    downstream: ["Concept:attribute", "Concept:function_call"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/classes.html#classes"
+    evidence_chunk_ids: ["python-docs-3.14.6-a8747e58b4b9"]
+  - id: "path-errors-files-and-classes-09-attribute"
+    label_en: "attribute learning route 9"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:class", "Concept:instance"]
+    focus: ["Concept:attribute"]
+    downstream: ["Concept:function_call", "Concept:debugging"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/classes.html#classes"
+    evidence_chunk_ids: ["python-docs-3.14.6-a8747e58b4b9"]
+  - id: "path-errors-files-and-classes-10-IndexError"
+    label_en: "IndexError learning route 10"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:list", "Concept:zero_based_index", "Concept:valid_index_range"]
+    focus: ["ErrorType:IndexError"]
+    downstream: ["Concept:debugging", "Misconception:off_by_one"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-11-KeyError"
+    label_en: "KeyError learning route 11"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:dict", "Concept:key"]
+    focus: ["ErrorType:KeyError"]
+    downstream: ["Concept:debugging", "Concept:dict_method"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-12-NameError"
+    label_en: "NameError learning route 12"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:variable", "Concept:name_binding", "Concept:scope"]
+    focus: ["ErrorType:NameError"]
+    downstream: ["Concept:debugging", "Concept:global_variable"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-13-TypeError"
+    label_en: "TypeError learning route 13"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:object", "Concept:type", "Concept:operator"]
+    focus: ["ErrorType:TypeError"]
+    downstream: ["Concept:debugging", "Concept:type_conversion"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-14-SyntaxError"
+    label_en: "SyntaxError learning route 14"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:statement", "Concept:indentation"]
+    focus: ["ErrorType:SyntaxError"]
+    downstream: ["Concept:traceback", "Concept:debugging"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-15-ValueError"
+    label_en: "ValueError learning route 15"
+    topic: "errors-files-and-classes"
+    upstream: ["ErrorType:TypeError", "ErrorType:SyntaxError"]
+    focus: ["ErrorType:ValueError"]
+    downstream: ["Misconception:index_starts_at_one", "Misconception:off_by_one"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-16-index_starts_at_one"
+    label_en: "index starts at one misconception learning route 16"
+    topic: "errors-files-and-classes"
+    upstream: ["ErrorType:SyntaxError", "ErrorType:ValueError"]
+    focus: ["Misconception:index_starts_at_one"]
+    downstream: ["Misconception:off_by_one", "Misconception:assignment_vs_equality"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-17-off_by_one"
+    label_en: "off-by-one error learning route 17"
+    topic: "errors-files-and-classes"
+    upstream: ["ErrorType:ValueError", "Misconception:index_starts_at_one"]
+    focus: ["Misconception:off_by_one"]
+    downstream: ["Misconception:assignment_vs_equality"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-18-assignment_vs_equality"
+    label_en: "assignment versus equality misconception learning route 18"
+    topic: "errors-files-and-classes"
+    upstream: ["Misconception:index_starts_at_one", "Misconception:off_by_one"]
+    focus: ["Misconception:assignment_vs_equality"]
+    downstream: ["Concept:debugging", "Concept:function", "Concept:class"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-19-traceback"
+    label_en: "traceback learning route 19"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:statement", "Concept:expression"]
+    focus: ["Concept:traceback"]
+    downstream: ["Concept:debugging", "Concept:file", "Concept:file_open"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-20-debugging"
+    label_en: "debugging learning route 20"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:traceback"]
+    focus: ["Concept:debugging"]
+    downstream: ["Concept:file", "Concept:file_open", "Concept:file_read"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]
+  - id: "path-errors-files-and-classes-21-file"
+    label_en: "file learning route 21"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:traceback", "Concept:debugging"]
+    focus: ["Concept:file"]
+    downstream: ["Concept:file_open", "Concept:file_read", "Concept:file_write"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-22-file_open"
+    label_en: "open a file learning route 22"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:traceback", "Concept:debugging", "Concept:file"]
+    focus: ["Concept:file_open"]
+    downstream: ["Concept:file_read", "Concept:file_write", "Concept:class"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-23-file_read"
+    label_en: "read a file learning route 23"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:debugging", "Concept:file", "Concept:file_open"]
+    focus: ["Concept:file_read"]
+    downstream: ["Concept:file_write", "Concept:class", "Concept:instance"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-24-file_write"
+    label_en: "write a file learning route 24"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file", "Concept:file_open", "Concept:file_read"]
+    focus: ["Concept:file_write"]
+    downstream: ["Concept:class", "Concept:instance", "Concept:attribute"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/inputoutput.html#input-and-output"
+    evidence_chunk_ids: ["python-docs-3.14.6-ebe34d3eb7ea"]
+  - id: "path-errors-files-and-classes-25-class"
+    label_en: "class learning route 25"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file_open", "Concept:file_read", "Concept:file_write"]
+    focus: ["Concept:class"]
+    downstream: ["Concept:instance", "Concept:attribute", "ErrorType:IndexError"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/classes.html#classes"
+    evidence_chunk_ids: ["python-docs-3.14.6-a8747e58b4b9"]
+  - id: "path-errors-files-and-classes-26-instance"
+    label_en: "instance learning route 26"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file_read", "Concept:file_write", "Concept:class"]
+    focus: ["Concept:instance"]
+    downstream: ["Concept:attribute", "ErrorType:IndexError", "ErrorType:KeyError"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/classes.html#classes"
+    evidence_chunk_ids: ["python-docs-3.14.6-a8747e58b4b9"]
+  - id: "path-errors-files-and-classes-27-attribute"
+    label_en: "attribute learning route 27"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:file_write", "Concept:class", "Concept:instance"]
+    focus: ["Concept:attribute"]
+    downstream: ["ErrorType:IndexError", "ErrorType:KeyError", "ErrorType:NameError"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/classes.html#classes"
+    evidence_chunk_ids: ["python-docs-3.14.6-a8747e58b4b9"]
+  - id: "path-errors-files-and-classes-28-IndexError"
+    label_en: "IndexError learning route 28"
+    topic: "errors-files-and-classes"
+    upstream: ["Concept:class", "Concept:instance", "Concept:attribute"]
+    focus: ["ErrorType:IndexError"]
+    downstream: ["ErrorType:KeyError", "ErrorType:NameError", "ErrorType:TypeError"]
+    source_id: "python-docs-3.14.6"
+    source_url: "https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions"
+    evidence_chunk_ids: ["python-docs-3.14.6-9c17a57fd494"]

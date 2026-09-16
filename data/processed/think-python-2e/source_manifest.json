@@ -1,0 +1,15 @@
+{
+  "source_id": "think-python-2e",
+  "display_name": "Think Python 2e HTML",
+  "start_url": "https://greenteapress.com/thinkpython2/html/index.html",
+  "language": "en",
+  "license_note": "creative-commons-source",
+  "publish_full_text": true,
+  "raw_manifest": "data/raw/think-python-2e/source_manifest.json",
+  "section_count": 328,
+  "chunk_count": 380,
+  "files": {
+    "sections_jsonl": "data/processed/think-python-2e/sections.jsonl",
+    "chunks_jsonl": "data/processed/think-python-2e/chunks.jsonl"
+  }
+}

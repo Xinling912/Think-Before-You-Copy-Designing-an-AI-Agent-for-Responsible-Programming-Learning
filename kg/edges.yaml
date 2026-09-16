@@ -1,0 +1,1458 @@
+# Source-grounded prerequisite and extension relations for the beginner Python curriculum.
+edges:
+  - from: "Concept:argument"
+    type: "related_to"
+    to: "Concept:default_argument"
+    weight: 100
+  - from: "Concept:argument"
+    type: "extends_to"
+    to: "Concept:default_argument"
+    weight: 100
+  - from: "Concept:argument"
+    type: "requires"
+    to: "Concept:default_argument"
+    weight: 100
+  - from: "Concept:argument"
+    type: "requires"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:argument"
+    type: "fills"
+    to: "Concept:parameter"
+    weight: 1
+  - from: "Concept:arithmetic_operator"
+    type: "related_to"
+    to: "Concept:comparison_operator"
+    weight: 100
+  - from: "Concept:arithmetic_operator"
+    type: "extends_to"
+    to: "Concept:comparison_operator"
+    weight: 100
+  - from: "Concept:arithmetic_operator"
+    type: "requires"
+    to: "Concept:comparison_operator"
+    weight: 100
+  - from: "Concept:assignment"
+    type: "binds"
+    to: "Concept:name_binding"
+    weight: 1
+  - from: "Concept:assignment"
+    type: "related_to"
+    to: "Concept:name_binding"
+    weight: 100
+  - from: "Concept:assignment"
+    type: "extends_to"
+    to: "Concept:name_binding"
+    weight: 100
+  - from: "Concept:assignment"
+    type: "requires"
+    to: "Concept:name_binding"
+    weight: 100
+  - from: "Concept:attribute"
+    type: "related_to"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:attribute"
+    type: "extends_to"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:attribute"
+    type: "related_to"
+    to: "ErrorType:IndexError"
+    weight: 100
+  - from: "Concept:attribute"
+    type: "extends_to"
+    to: "ErrorType:IndexError"
+    weight: 100
+  - from: "Concept:attribute"
+    type: "requires"
+    to: "ErrorType:IndexError"
+    weight: 100
+  - from: "Concept:boolean"
+    type: "related_to"
+    to: "Concept:none"
+    weight: 100
+  - from: "Concept:boolean"
+    type: "extends_to"
+    to: "Concept:none"
+    weight: 100
+  - from: "Concept:boolean"
+    type: "requires"
+    to: "Concept:none"
+    weight: 100
+  - from: "Concept:break"
+    type: "related_to"
+    to: "Concept:continue"
+    weight: 100
+  - from: "Concept:break"
+    type: "extends_to"
+    to: "Concept:continue"
+    weight: 100
+  - from: "Concept:break"
+    type: "requires"
+    to: "Concept:continue"
+    weight: 100
+  - from: "Concept:class"
+    type: "extends_to"
+    to: "Concept:instance"
+    weight: 100
+  - from: "Concept:class"
+    type: "requires"
+    to: "Concept:instance"
+    weight: 100
+  - from: "Concept:class"
+    type: "related_to"
+    to: "Concept:instance"
+    weight: 100
+  - from: "Concept:comment"
+    type: "related_to"
+    to: "Concept:indentation"
+    weight: 100
+  - from: "Concept:comment"
+    type: "extends_to"
+    to: "Concept:indentation"
+    weight: 100
+  - from: "Concept:comment"
+    type: "requires"
+    to: "Concept:indentation"
+    weight: 100
+  - from: "Concept:comparison_operator"
+    type: "requires"
+    to: "Concept:if_statement"
+    weight: 100
+  - from: "Concept:comparison_operator"
+    type: "related_to"
+    to: "Concept:logical_operator"
+    weight: 100
+  - from: "Concept:comparison_operator"
+    type: "extends_to"
+    to: "Concept:logical_operator"
+    weight: 100
+  - from: "Concept:comparison_operator"
+    type: "requires"
+    to: "Concept:logical_operator"
+    weight: 100
+  - from: "Concept:complex"
+    type: "related_to"
+    to: "Concept:boolean"
+    weight: 100
+  - from: "Concept:complex"
+    type: "extends_to"
+    to: "Concept:boolean"
+    weight: 100
+  - from: "Concept:complex"
+    type: "requires"
+    to: "Concept:boolean"
+    weight: 100
+  - from: "Concept:condition"
+    type: "related_to"
+    to: "Concept:comparison_operator"
+    weight: 100
+  - from: "Concept:condition"
+    type: "related_to"
+    to: "Concept:function"
+    weight: 100
+  - from: "Concept:condition"
+    type: "controls"
+    to: "Concept:if_statement"
+    weight: 1
+  - from: "Concept:condition"
+    type: "extends_to"
+    to: "Concept:if_statement"
+    weight: 100
+  - from: "Concept:condition"
+    type: "related_to"
+    to: "Concept:if_statement"
+    weight: 100
+  - from: "Concept:condition"
+    type: "requires"
+    to: "Concept:if_statement"
+    weight: 100
+  - from: "Concept:condition"
+    type: "controls"
+    to: "Concept:while_loop"
+    weight: 1
+  - from: "Concept:continue"
+    type: "related_to"
+    to: "Concept:loop_variable"
+    weight: 100
+  - from: "Concept:continue"
+    type: "extends_to"
+    to: "Concept:loop_variable"
+    weight: 100
+  - from: "Concept:continue"
+    type: "requires"
+    to: "Concept:loop_variable"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "Concept:dict_method"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "Concept:file"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "extends_to"
+    to: "Concept:file"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "requires"
+    to: "Concept:file"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "Concept:function"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "Concept:global_variable"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "uses"
+    to: "Concept:traceback"
+    weight: 1
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "Concept:type_conversion"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "extends_to"
+    to: "Concept:valid_index_range"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "ErrorType:SyntaxError"
+    weight: 100
+  - from: "Concept:debugging"
+    type: "related_to"
+    to: "Misconception:off_by_one"
+    weight: 100
+  - from: "Concept:default_argument"
+    type: "related_to"
+    to: "Concept:return_value"
+    weight: 100
+  - from: "Concept:default_argument"
+    type: "extends_to"
+    to: "Concept:return_value"
+    weight: 100
+  - from: "Concept:default_argument"
+    type: "requires"
+    to: "Concept:return_value"
+    weight: 100
+  - from: "Concept:dict_method"
+    type: "extends_to"
+    to: "Concept:sequence"
+    weight: 100
+  - from: "Concept:dict"
+    type: "extends_to"
+    to: "Concept:key"
+    weight: 100
+  - from: "Concept:dict"
+    type: "related_to"
+    to: "Concept:key"
+    weight: 100
+  - from: "Concept:dict"
+    type: "related_to"
+    to: "Concept:set"
+    weight: 100
+  - from: "Concept:dict"
+    type: "requires"
+    to: "Concept:set"
+    weight: 100
+  - from: "Concept:dict"
+    type: "extends_to"
+    to: "Concept:set"
+    weight: 100
+  - from: "Concept:elif_clause"
+    type: "related_to"
+    to: "Concept:else_clause"
+    weight: 100
+  - from: "Concept:elif_clause"
+    type: "extends_to"
+    to: "Concept:else_clause"
+    weight: 100
+  - from: "Concept:elif_clause"
+    type: "requires"
+    to: "Concept:else_clause"
+    weight: 100
+  - from: "Concept:else_clause"
+    type: "related_to"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:else_clause"
+    type: "extends_to"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:else_clause"
+    type: "requires"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:enumerate"
+    type: "related_to"
+    to: "Concept:break"
+    weight: 100
+  - from: "Concept:enumerate"
+    type: "extends_to"
+    to: "Concept:break"
+    weight: 100
+  - from: "Concept:enumerate"
+    type: "requires"
+    to: "Concept:break"
+    weight: 100
+  - from: "Concept:enumerate"
+    type: "related_to"
+    to: "Concept:for_loop"
+    weight: 1
+  - from: "Concept:expression"
+    type: "requires"
+    to: "Concept:condition"
+    weight: 100
+  - from: "Concept:expression"
+    type: "requires"
+    to: "Concept:traceback"
+    weight: 100
+  - from: "Concept:expression"
+    type: "related_to"
+    to: "Concept:variable"
+    weight: 100
+  - from: "Concept:expression"
+    type: "extends_to"
+    to: "Concept:variable"
+    weight: 100
+  - from: "Concept:expression"
+    type: "requires"
+    to: "Concept:variable"
+    weight: 100
+  - from: "Concept:file_open"
+    type: "related_to"
+    to: "Concept:file_read"
+    weight: 100
+  - from: "Concept:file_open"
+    type: "extends_to"
+    to: "Concept:file_read"
+    weight: 100
+  - from: "Concept:file_open"
+    type: "requires"
+    to: "Concept:file_read"
+    weight: 100
+  - from: "Concept:file_open"
+    type: "related_to"
+    to: "Concept:string"
+    weight: 100
+  - from: "Concept:file_read"
+    type: "related_to"
+    to: "Concept:file_write"
+    weight: 100
+  - from: "Concept:file_read"
+    type: "extends_to"
+    to: "Concept:file_write"
+    weight: 100
+  - from: "Concept:file_read"
+    type: "requires"
+    to: "Concept:file_write"
+    weight: 100
+  - from: "Concept:file_read"
+    type: "extends_to"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:file_write"
+    type: "related_to"
+    to: "Concept:class"
+    weight: 100
+  - from: "Concept:file_write"
+    type: "extends_to"
+    to: "Concept:class"
+    weight: 100
+  - from: "Concept:file_write"
+    type: "requires"
+    to: "Concept:class"
+    weight: 100
+  - from: "Concept:file_write"
+    type: "extends_to"
+    to: "Concept:output_print"
+    weight: 100
+  - from: "Concept:file"
+    type: "extends_to"
+    to: "Concept:file_open"
+    weight: 100
+  - from: "Concept:file"
+    type: "related_to"
+    to: "Concept:file_open"
+    weight: 100
+  - from: "Concept:file"
+    type: "requires"
+    to: "Concept:file_open"
+    weight: 100
+  - from: "Concept:file"
+    type: "related_to"
+    to: "Concept:string"
+    weight: 100
+  - from: "Concept:float"
+    type: "related_to"
+    to: "Concept:complex"
+    weight: 100
+  - from: "Concept:float"
+    type: "extends_to"
+    to: "Concept:complex"
+    weight: 100
+  - from: "Concept:float"
+    type: "requires"
+    to: "Concept:complex"
+    weight: 100
+  - from: "Concept:for_loop"
+    type: "related_to"
+    to: "Concept:list"
+    weight: 1
+  - from: "Concept:for_loop"
+    type: "related_to"
+    to: "Concept:list_comprehension"
+    weight: 100
+  - from: "Concept:for_loop"
+    type: "extends_to"
+    to: "Concept:loop_variable"
+    weight: 100
+  - from: "Concept:for_loop"
+    type: "iterates"
+    to: "Concept:sequence"
+    weight: 1
+  - from: "Concept:for_loop"
+    type: "related_to"
+    to: "Concept:string"
+    weight: 100
+  - from: "Concept:for_loop"
+    type: "related_to"
+    to: "Concept:while_loop"
+    weight: 100
+  - from: "Concept:for_loop"
+    type: "extends_to"
+    to: "Concept:while_loop"
+    weight: 100
+  - from: "Concept:for_loop"
+    type: "requires"
+    to: "Concept:while_loop"
+    weight: 100
+  - from: "Concept:function_call"
+    type: "passes"
+    to: "Concept:argument"
+    weight: 1
+  - from: "Concept:function_call"
+    type: "related_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "Concept:function_call"
+    type: "related_to"
+    to: "Concept:parameter"
+    weight: 100
+  - from: "Concept:function_call"
+    type: "extends_to"
+    to: "Concept:parameter"
+    weight: 100
+  - from: "Concept:function_call"
+    type: "requires"
+    to: "Concept:parameter"
+    weight: 100
+  - from: "Concept:function_call"
+    type: "extends_to"
+    to: "Concept:return_value"
+    weight: 100
+  - from: "Concept:function_call"
+    type: "related_to"
+    to: "Concept:return_value"
+    weight: 100
+  - from: "Concept:function_definition"
+    type: "related_to"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:function_definition"
+    type: "extends_to"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:function_definition"
+    type: "requires"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:function_definition"
+    type: "requires"
+    to: "Concept:parameter"
+    weight: 100
+  - from: "Concept:function_definition"
+    type: "extends_to"
+    to: "Concept:return_value"
+    weight: 100
+  - from: "Concept:function"
+    type: "related_to"
+    to: "Concept:argument"
+    weight: 100
+  - from: "Concept:function"
+    type: "requires"
+    to: "Concept:class"
+    weight: 100
+  - from: "Concept:function"
+    type: "related_to"
+    to: "Concept:class"
+    weight: 100
+  - from: "Concept:function"
+    type: "extends_to"
+    to: "Concept:function_definition"
+    weight: 100
+  - from: "Concept:function"
+    type: "requires"
+    to: "Concept:function_definition"
+    weight: 100
+  - from: "Concept:function"
+    type: "related_to"
+    to: "Concept:function_definition"
+    weight: 100
+  - from: "Concept:function"
+    type: "defines"
+    to: "Concept:parameter"
+    weight: 1
+  - from: "Concept:function"
+    type: "related_to"
+    to: "Concept:parameter"
+    weight: 100
+  - from: "Concept:function"
+    type: "can_return"
+    to: "Concept:return_value"
+    weight: 1
+  - from: "Concept:function"
+    type: "introduces"
+    to: "Concept:scope"
+    weight: 1
+  - from: "Concept:function"
+    type: "related_to"
+    to: "Concept:scope"
+    weight: 100
+  - from: "Concept:global_variable"
+    type: "related_to"
+    to: "Concept:module"
+    weight: 100
+  - from: "Concept:global_variable"
+    type: "extends_to"
+    to: "Concept:module"
+    weight: 100
+  - from: "Concept:global_variable"
+    type: "requires"
+    to: "Concept:module"
+    weight: 100
+  - from: "Concept:if_statement"
+    type: "related_to"
+    to: "Concept:elif_clause"
+    weight: 100
+  - from: "Concept:if_statement"
+    type: "extends_to"
+    to: "Concept:elif_clause"
+    weight: 100
+  - from: "Concept:if_statement"
+    type: "requires"
+    to: "Concept:elif_clause"
+    weight: 100
+  - from: "Concept:if_statement"
+    type: "requires"
+    to: "Concept:while_loop"
+    weight: 100
+  - from: "Concept:import_statement"
+    type: "related_to"
+    to: "Concept:library_function"
+    weight: 100
+  - from: "Concept:import_statement"
+    type: "extends_to"
+    to: "Concept:library_function"
+    weight: 100
+  - from: "Concept:import_statement"
+    type: "requires"
+    to: "Concept:library_function"
+    weight: 100
+  - from: "Concept:indentation"
+    type: "related_to"
+    to: "Concept:input"
+    weight: 100
+  - from: "Concept:indentation"
+    type: "extends_to"
+    to: "Concept:input"
+    weight: 100
+  - from: "Concept:indentation"
+    type: "requires"
+    to: "Concept:input"
+    weight: 100
+  - from: "Concept:indentation"
+    type: "requires"
+    to: "ErrorType:SyntaxError"
+    weight: 100
+  - from: "Concept:index"
+    type: "related_to"
+    to: "Concept:len"
+    weight: 100
+  - from: "Concept:index"
+    type: "requires"
+    to: "Concept:list"
+    weight: 1
+  - from: "Concept:index"
+    type: "selects_from"
+    to: "Concept:sequence"
+    weight: 1
+  - from: "Concept:index"
+    type: "requires"
+    to: "Concept:slice"
+    weight: 100
+  - from: "Concept:index"
+    type: "related_to"
+    to: "Concept:zero_based_index"
+    weight: 100
+  - from: "Concept:index"
+    type: "extends_to"
+    to: "Concept:zero_based_index"
+    weight: 100
+  - from: "Concept:index"
+    type: "requires"
+    to: "Concept:zero_based_index"
+    weight: 100
+  - from: "Concept:input"
+    type: "related_to"
+    to: "Concept:output_print"
+    weight: 100
+  - from: "Concept:input"
+    type: "extends_to"
+    to: "Concept:output_print"
+    weight: 100
+  - from: "Concept:input"
+    type: "requires"
+    to: "Concept:output_print"
+    weight: 100
+  - from: "Concept:instance"
+    type: "related_to"
+    to: "Concept:attribute"
+    weight: 100
+  - from: "Concept:instance"
+    type: "extends_to"
+    to: "Concept:attribute"
+    weight: 100
+  - from: "Concept:instance"
+    type: "requires"
+    to: "Concept:attribute"
+    weight: 100
+  - from: "Concept:int"
+    type: "related_to"
+    to: "Concept:float"
+    weight: 100
+  - from: "Concept:int"
+    type: "extends_to"
+    to: "Concept:float"
+    weight: 100
+  - from: "Concept:int"
+    type: "requires"
+    to: "Concept:float"
+    weight: 100
+  - from: "Concept:iteration"
+    type: "related_to"
+    to: "Concept:break"
+    weight: 100
+  - from: "Concept:iteration"
+    type: "related_to"
+    to: "Concept:list_comprehension"
+    weight: 100
+  - from: "Concept:iteration"
+    type: "extends_to"
+    to: "Concept:list_comprehension"
+    weight: 100
+  - from: "Concept:iteration"
+    type: "requires"
+    to: "Concept:list_comprehension"
+    weight: 100
+  - from: "Concept:iteration"
+    type: "related_to"
+    to: "Concept:range"
+    weight: 100
+  - from: "Concept:key"
+    type: "related_to"
+    to: "Concept:value"
+    weight: 100
+  - from: "Concept:key"
+    type: "extends_to"
+    to: "Concept:value"
+    weight: 100
+  - from: "Concept:key"
+    type: "requires"
+    to: "Concept:value"
+    weight: 100
+  - from: "Concept:key"
+    type: "requires"
+    to: "ErrorType:KeyError"
+    weight: 100
+  - from: "Concept:len"
+    type: "related_to"
+    to: "Concept:list"
+    weight: 4
+  - from: "Concept:len"
+    type: "related_to"
+    to: "Concept:mutability"
+    weight: 100
+  - from: "Concept:len"
+    type: "requires"
+    to: "Concept:mutability"
+    weight: 100
+  - from: "Concept:len"
+    type: "extends_to"
+    to: "Concept:mutability"
+    weight: 100
+  - from: "Concept:len"
+    type: "requires"
+    to: "Concept:valid_index_range"
+    weight: 100
+  - from: "Concept:len"
+    type: "extends_to"
+    to: "Concept:valid_index_range"
+    weight: 100
+  - from: "Concept:library_function"
+    type: "extends_to"
+    to: "Concept:function_call"
+    weight: 100
+  - from: "Concept:list_comprehension"
+    type: "extends_to"
+    to: "Concept:condition"
+    weight: 100
+  - from: "Concept:list_method"
+    type: "related_to"
+    to: "Concept:dict_method"
+    weight: 100
+  - from: "Concept:list_method"
+    type: "extends_to"
+    to: "Concept:dict_method"
+    weight: 100
+  - from: "Concept:list_method"
+    type: "requires"
+    to: "Concept:dict_method"
+    weight: 100
+  - from: "Concept:list_method"
+    type: "related_to"
+    to: "Concept:mutability"
+    weight: 100
+  - from: "Concept:list"
+    type: "requires"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:list"
+    type: "extends_to"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:list"
+    type: "related_to"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:list"
+    type: "requires"
+    to: "Concept:len"
+    weight: 100
+  - from: "Concept:list"
+    type: "requires"
+    to: "Concept:object"
+    weight: 1
+  - from: "Concept:list"
+    type: "is_a"
+    to: "Concept:sequence"
+    weight: 1
+  - from: "Concept:list"
+    type: "related_to"
+    to: "Concept:sequence"
+    weight: 100
+  - from: "Concept:list"
+    type: "related_to"
+    to: "Concept:tuple"
+    weight: 100
+  - from: "Concept:list"
+    type: "requires"
+    to: "Concept:tuple"
+    weight: 100
+  - from: "Concept:list"
+    type: "extends_to"
+    to: "Concept:tuple"
+    weight: 100
+  - from: "Concept:list"
+    type: "related_to"
+    to: "Concept:type"
+    weight: 1
+  - from: "Concept:list"
+    type: "related_to"
+    to: "Concept:zero_based_index"
+    weight: 100
+  - from: "Concept:local_variable"
+    type: "related_to"
+    to: "Concept:global_variable"
+    weight: 100
+  - from: "Concept:local_variable"
+    type: "extends_to"
+    to: "Concept:global_variable"
+    weight: 100
+  - from: "Concept:local_variable"
+    type: "requires"
+    to: "Concept:global_variable"
+    weight: 100
+  - from: "Concept:logical_operator"
+    type: "extends_to"
+    to: "Concept:type"
+    weight: 100
+  - from: "Concept:loop_variable"
+    type: "related_to"
+    to: "Concept:iteration"
+    weight: 100
+  - from: "Concept:loop_variable"
+    type: "extends_to"
+    to: "Concept:iteration"
+    weight: 100
+  - from: "Concept:loop_variable"
+    type: "requires"
+    to: "Concept:iteration"
+    weight: 100
+  - from: "Concept:membership"
+    type: "related_to"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:membership"
+    type: "extends_to"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:membership"
+    type: "requires"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:module"
+    type: "related_to"
+    to: "Concept:import_statement"
+    weight: 100
+  - from: "Concept:module"
+    type: "extends_to"
+    to: "Concept:import_statement"
+    weight: 100
+  - from: "Concept:module"
+    type: "requires"
+    to: "Concept:import_statement"
+    weight: 100
+  - from: "Concept:mutability"
+    type: "extends_to"
+    to: "Concept:list_method"
+    weight: 100
+  - from: "Concept:mutability"
+    type: "requires"
+    to: "Concept:list_method"
+    weight: 100
+  - from: "Concept:mutability"
+    type: "related_to"
+    to: "Concept:list_method"
+    weight: 100
+  - from: "Concept:name_binding"
+    type: "related_to"
+    to: "Concept:comment"
+    weight: 100
+  - from: "Concept:name_binding"
+    type: "extends_to"
+    to: "Concept:comment"
+    weight: 100
+  - from: "Concept:name_binding"
+    type: "requires"
+    to: "Concept:comment"
+    weight: 100
+  - from: "Concept:name_binding"
+    type: "related_to"
+    to: "Concept:scope"
+    weight: 100
+  - from: "Concept:none"
+    type: "related_to"
+    to: "Concept:string"
+    weight: 100
+  - from: "Concept:none"
+    type: "extends_to"
+    to: "Concept:string"
+    weight: 100
+  - from: "Concept:none"
+    type: "requires"
+    to: "Concept:string"
+    weight: 100
+  - from: "Concept:object"
+    type: "related_to"
+    to: "Concept:function"
+    weight: 100
+  - from: "Concept:object"
+    type: "has"
+    to: "Concept:type"
+    weight: 1
+  - from: "Concept:object"
+    type: "extends_to"
+    to: "Concept:type"
+    weight: 100
+  - from: "Concept:object"
+    type: "requires"
+    to: "Concept:type"
+    weight: 100
+  - from: "Concept:object"
+    type: "related_to"
+    to: "Concept:type"
+    weight: 100
+  - from: "Concept:operator"
+    type: "related_to"
+    to: "Concept:arithmetic_operator"
+    weight: 100
+  - from: "Concept:operator"
+    type: "extends_to"
+    to: "Concept:arithmetic_operator"
+    weight: 100
+  - from: "Concept:operator"
+    type: "requires"
+    to: "Concept:arithmetic_operator"
+    weight: 100
+  - from: "Concept:operator"
+    type: "related_to"
+    to: "Concept:type_conversion"
+    weight: 100
+  - from: "Concept:operator"
+    type: "requires"
+    to: "ErrorType:TypeError"
+    weight: 100
+  - from: "Concept:output_print"
+    type: "extends_to"
+    to: "Concept:expression"
+    weight: 100
+  - from: "Concept:output_print"
+    type: "related_to"
+    to: "Concept:function"
+    weight: 100
+  - from: "Concept:output_print"
+    type: "requires"
+    to: "Concept:program"
+    weight: 100
+  - from: "Concept:parameter"
+    type: "extends_to"
+    to: "Concept:argument"
+    weight: 100
+  - from: "Concept:parameter"
+    type: "requires"
+    to: "Concept:argument"
+    weight: 100
+  - from: "Concept:parameter"
+    type: "related_to"
+    to: "Concept:argument"
+    weight: 100
+  - from: "Concept:parameter"
+    type: "requires"
+    to: "Concept:function_definition"
+    weight: 100
+  - from: "Concept:program"
+    type: "contains"
+    to: "Concept:statement"
+    weight: 1
+  - from: "Concept:program"
+    type: "extends_to"
+    to: "Concept:statement"
+    weight: 100
+  - from: "Concept:program"
+    type: "requires"
+    to: "Concept:statement"
+    weight: 100
+  - from: "Concept:program"
+    type: "related_to"
+    to: "Concept:statement"
+    weight: 100
+  - from: "Concept:range"
+    type: "extends_to"
+    to: "Concept:enumerate"
+    weight: 100
+  - from: "Concept:range"
+    type: "requires"
+    to: "Concept:enumerate"
+    weight: 100
+  - from: "Concept:range"
+    type: "related_to"
+    to: "Concept:enumerate"
+    weight: 100
+  - from: "Concept:range"
+    type: "related_to"
+    to: "Concept:for_loop"
+    weight: 1
+  - from: "Concept:return_value"
+    type: "related_to"
+    to: "Concept:library_function"
+    weight: 100
+  - from: "Concept:return_value"
+    type: "related_to"
+    to: "Concept:scope"
+    weight: 100
+  - from: "Concept:return_value"
+    type: "extends_to"
+    to: "Concept:scope"
+    weight: 100
+  - from: "Concept:return_value"
+    type: "requires"
+    to: "Concept:scope"
+    weight: 100
+  - from: "Concept:scope"
+    type: "related_to"
+    to: "Concept:local_variable"
+    weight: 100
+  - from: "Concept:scope"
+    type: "extends_to"
+    to: "Concept:local_variable"
+    weight: 100
+  - from: "Concept:scope"
+    type: "requires"
+    to: "Concept:local_variable"
+    weight: 100
+  - from: "Concept:scope"
+    type: "requires"
+    to: "Concept:module"
+    weight: 100
+  - from: "Concept:scope"
+    type: "requires"
+    to: "ErrorType:NameError"
+    weight: 100
+  - from: "Concept:sequence"
+    type: "related_to"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:sequence"
+    type: "requires"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:sequence"
+    type: "related_to"
+    to: "Concept:index"
+    weight: 100
+  - from: "Concept:sequence"
+    type: "extends_to"
+    to: "Concept:list"
+    weight: 100
+  - from: "Concept:sequence"
+    type: "requires"
+    to: "Concept:list"
+    weight: 100
+  - from: "Concept:sequence"
+    type: "related_to"
+    to: "Concept:list"
+    weight: 100
+  - from: "Concept:set"
+    type: "extends_to"
+    to: "Concept:key"
+    weight: 100
+  - from: "Concept:set"
+    type: "requires"
+    to: "Concept:key"
+    weight: 100
+  - from: "Concept:set"
+    type: "related_to"
+    to: "Concept:key"
+    weight: 100
+  - from: "Concept:slice"
+    type: "requires"
+    to: "Concept:index"
+    weight: 1
+  - from: "Concept:slice"
+    type: "related_to"
+    to: "Concept:len"
+    weight: 100
+  - from: "Concept:slice"
+    type: "extends_to"
+    to: "Concept:len"
+    weight: 100
+  - from: "Concept:slice"
+    type: "requires"
+    to: "Concept:len"
+    weight: 100
+  - from: "Concept:slice"
+    type: "extends_to"
+    to: "Concept:list_method"
+    weight: 100
+  - from: "Concept:statement"
+    type: "uses"
+    to: "Concept:expression"
+    weight: 1
+  - from: "Concept:statement"
+    type: "related_to"
+    to: "Concept:expression"
+    weight: 100
+  - from: "Concept:statement"
+    type: "extends_to"
+    to: "Concept:expression"
+    weight: 100
+  - from: "Concept:statement"
+    type: "requires"
+    to: "Concept:expression"
+    weight: 100
+  - from: "Concept:statement"
+    type: "related_to"
+    to: "Concept:indentation"
+    weight: 100
+  - from: "Concept:statement"
+    type: "related_to"
+    to: "Concept:variable"
+    weight: 100
+  - from: "Concept:string"
+    type: "requires"
+    to: "Concept:file_open"
+    weight: 100
+  - from: "Concept:string"
+    type: "requires"
+    to: "Concept:file_write"
+    weight: 100
+  - from: "Concept:string"
+    type: "is_a"
+    to: "Concept:sequence"
+    weight: 1
+  - from: "Concept:string"
+    type: "related_to"
+    to: "Concept:type_conversion"
+    weight: 100
+  - from: "Concept:string"
+    type: "extends_to"
+    to: "Concept:type_conversion"
+    weight: 100
+  - from: "Concept:string"
+    type: "requires"
+    to: "Concept:type_conversion"
+    weight: 100
+  - from: "Concept:string"
+    type: "related_to"
+    to: "Concept:variable"
+    weight: 100
+  - from: "Concept:traceback"
+    type: "extends_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "Concept:traceback"
+    type: "related_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "Concept:traceback"
+    type: "requires"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "Concept:traceback"
+    type: "reveals"
+    to: "ErrorType:IndexError"
+    weight: 1
+  - from: "Concept:traceback"
+    type: "reveals"
+    to: "ErrorType:NameError"
+    weight: 1
+  - from: "Concept:traceback"
+    type: "reveals"
+    to: "ErrorType:SyntaxError"
+    weight: 1
+  - from: "Concept:traceback"
+    type: "reveals"
+    to: "ErrorType:TypeError"
+    weight: 1
+  - from: "Concept:traceback"
+    type: "related_to"
+    to: "ErrorType:TypeError"
+    weight: 100
+  - from: "Concept:tuple"
+    type: "extends_to"
+    to: "Concept:dict"
+    weight: 100
+  - from: "Concept:tuple"
+    type: "related_to"
+    to: "Concept:dict"
+    weight: 100
+  - from: "Concept:tuple"
+    type: "requires"
+    to: "Concept:dict"
+    weight: 100
+  - from: "Concept:tuple"
+    type: "is_a"
+    to: "Concept:sequence"
+    weight: 1
+  - from: "Concept:type_conversion"
+    type: "related_to"
+    to: "Concept:operator"
+    weight: 100
+  - from: "Concept:type_conversion"
+    type: "extends_to"
+    to: "Concept:operator"
+    weight: 100
+  - from: "Concept:type_conversion"
+    type: "requires"
+    to: "Concept:operator"
+    weight: 100
+  - from: "Concept:type"
+    type: "requires"
+    to: "Concept:dict"
+    weight: 100
+  - from: "Concept:type"
+    type: "related_to"
+    to: "Concept:int"
+    weight: 100
+  - from: "Concept:type"
+    type: "extends_to"
+    to: "Concept:int"
+    weight: 100
+  - from: "Concept:type"
+    type: "requires"
+    to: "Concept:int"
+    weight: 100
+  - from: "Concept:type"
+    type: "related_to"
+    to: "Concept:operator"
+    weight: 100
+  - from: "Concept:type"
+    type: "requires"
+    to: "Concept:sequence"
+    weight: 100
+  - from: "Concept:type"
+    type: "related_to"
+    to: "Concept:sequence"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "related_to"
+    to: "Concept:for_loop"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "related_to"
+    to: "Concept:function"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "uses"
+    to: "Concept:len"
+    weight: 1
+  - from: "Concept:valid_index_range"
+    type: "related_to"
+    to: "Concept:slice"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "extends_to"
+    to: "Concept:slice"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "requires"
+    to: "Concept:slice"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "combines"
+    to: "Concept:zero_based_index"
+    weight: 1
+  - from: "Concept:valid_index_range"
+    type: "prevents"
+    to: "ErrorType:IndexError"
+    weight: 1
+  - from: "Concept:valid_index_range"
+    type: "related_to"
+    to: "ErrorType:IndexError"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "extends_to"
+    to: "ErrorType:IndexError"
+    weight: 100
+  - from: "Concept:valid_index_range"
+    type: "requires"
+    to: "ErrorType:IndexError"
+    weight: 100
+  - from: "Concept:value"
+    type: "related_to"
+    to: "Concept:dict_method"
+    weight: 100
+  - from: "Concept:value"
+    type: "related_to"
+    to: "Concept:membership"
+    weight: 100
+  - from: "Concept:value"
+    type: "extends_to"
+    to: "Concept:membership"
+    weight: 100
+  - from: "Concept:value"
+    type: "requires"
+    to: "Concept:membership"
+    weight: 100
+  - from: "Concept:variable"
+    type: "related_to"
+    to: "Concept:assignment"
+    weight: 100
+  - from: "Concept:variable"
+    type: "extends_to"
+    to: "Concept:assignment"
+    weight: 100
+  - from: "Concept:variable"
+    type: "requires"
+    to: "Concept:assignment"
+    weight: 100
+  - from: "Concept:variable"
+    type: "requires"
+    to: "Concept:file"
+    weight: 100
+  - from: "Concept:variable"
+    type: "requires"
+    to: "Concept:function"
+    weight: 100
+  - from: "Concept:variable"
+    type: "related_to"
+    to: "Concept:name_binding"
+    weight: 100
+  - from: "Concept:variable"
+    type: "refers_to"
+    to: "Concept:object"
+    weight: 1
+  - from: "Concept:variable"
+    type: "requires"
+    to: "Concept:object"
+    weight: 100
+  - from: "Concept:while_loop"
+    type: "related_to"
+    to: "Concept:if_statement"
+    weight: 1
+  - from: "Concept:while_loop"
+    type: "extends_to"
+    to: "Concept:iteration"
+    weight: 100
+  - from: "Concept:while_loop"
+    type: "requires"
+    to: "Concept:range"
+    weight: 100
+  - from: "Concept:while_loop"
+    type: "related_to"
+    to: "Concept:range"
+    weight: 100
+  - from: "Concept:while_loop"
+    type: "extends_to"
+    to: "Concept:range"
+    weight: 100
+  - from: "Concept:zero_based_index"
+    type: "constrains"
+    to: "Concept:index"
+    weight: 1
+  - from: "Concept:zero_based_index"
+    type: "related_to"
+    to: "Concept:len"
+    weight: 100
+  - from: "Concept:zero_based_index"
+    type: "related_to"
+    to: "Concept:valid_index_range"
+    weight: 100
+  - from: "Concept:zero_based_index"
+    type: "extends_to"
+    to: "Concept:valid_index_range"
+    weight: 100
+  - from: "Concept:zero_based_index"
+    type: "requires"
+    to: "Concept:valid_index_range"
+    weight: 100
+  - from: "ErrorType:IndexError"
+    type: "related_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "ErrorType:IndexError"
+    type: "extends_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "ErrorType:IndexError"
+    type: "caused_by"
+    to: "Concept:index"
+    weight: 5
+  - from: "ErrorType:IndexError"
+    type: "caused_by"
+    to: "Concept:valid_index_range"
+    weight: 1
+  - from: "ErrorType:IndexError"
+    type: "related_to"
+    to: "ErrorType:KeyError"
+    weight: 100
+  - from: "ErrorType:IndexError"
+    type: "extends_to"
+    to: "ErrorType:KeyError"
+    weight: 100
+  - from: "ErrorType:KeyError"
+    type: "extends_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "ErrorType:KeyError"
+    type: "related_to"
+    to: "ErrorType:NameError"
+    weight: 100
+  - from: "ErrorType:NameError"
+    type: "extends_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "ErrorType:NameError"
+    type: "caused_by"
+    to: "Concept:name_binding"
+    weight: 1
+  - from: "ErrorType:NameError"
+    type: "related_to"
+    to: "ErrorType:TypeError"
+    weight: 100
+  - from: "ErrorType:SyntaxError"
+    type: "caused_by"
+    to: "Concept:statement"
+    weight: 1
+  - from: "ErrorType:SyntaxError"
+    type: "extends_to"
+    to: "Concept:traceback"
+    weight: 100
+  - from: "ErrorType:SyntaxError"
+    type: "requires"
+    to: "ErrorType:ValueError"
+    weight: 100
+  - from: "ErrorType:SyntaxError"
+    type: "related_to"
+    to: "ErrorType:ValueError"
+    weight: 100
+  - from: "ErrorType:TypeError"
+    type: "requires"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "ErrorType:TypeError"
+    type: "extends_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "ErrorType:TypeError"
+    type: "caused_by"
+    to: "Concept:type"
+    weight: 1
+  - from: "ErrorType:TypeError"
+    type: "related_to"
+    to: "ErrorType:SyntaxError"
+    weight: 100
+  - from: "ErrorType:ValueError"
+    type: "extends_to"
+    to: "Misconception:index_starts_at_one"
+    weight: 100
+  - from: "ErrorType:ValueError"
+    type: "requires"
+    to: "Misconception:index_starts_at_one"
+    weight: 100
+  - from: "ErrorType:ValueError"
+    type: "related_to"
+    to: "Misconception:index_starts_at_one"
+    weight: 100
+  - from: "Misconception:assignment_vs_equality"
+    type: "extends_to"
+    to: "Concept:debugging"
+    weight: 100
+  - from: "Misconception:index_starts_at_one"
+    type: "causes_error"
+    to: "ErrorType:IndexError"
+    weight: 1
+  - from: "Misconception:index_starts_at_one"
+    type: "related_to"
+    to: "Misconception:off_by_one"
+    weight: 100
+  - from: "Misconception:index_starts_at_one"
+    type: "extends_to"
+    to: "Misconception:off_by_one"
+    weight: 100
+  - from: "Misconception:index_starts_at_one"
+    type: "requires"
+    to: "Misconception:off_by_one"
+    weight: 100
+  - from: "Misconception:off_by_one"
+    type: "causes_error"
+    to: "ErrorType:IndexError"
+    weight: 1
+  - from: "Misconception:off_by_one"
+    type: "related_to"
+    to: "Misconception:assignment_vs_equality"
+    weight: 100
+  - from: "Misconception:off_by_one"
+    type: "extends_to"
+    to: "Misconception:assignment_vs_equality"
+    weight: 100
+  - from: "Misconception:off_by_one"
+    type: "requires"
+    to: "Misconception:assignment_vs_equality"
+    weight: 100

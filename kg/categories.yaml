@@ -1,0 +1,61 @@
+categories:
+  - id: "program-foundations"
+    label_zh: "程序基础域"
+    label_en: "Program Foundations"
+    description_zh: "理解 Python 程序如何由语句、表达式、变量、赋值、输入与输出组成。"
+    description_en: "Understand how Python programs are composed of statements, expressions, variables, assignments, input, and output."
+    color: "#B7793E"
+    surface_color: "#F4E2CC"
+    anchor_x: 0.20
+    anchor_y: 0.27
+    order: 1
+  - id: "types-and-values"
+    label_zh: "类型与值域"
+    label_en: "Types and Values"
+    description_zh: "理解对象、数据类型、基础值以及算术、比较和逻辑运算。"
+    description_en: "Understand objects, data types, basic values, and arithmetic, comparison, and logical operations."
+    color: "#5077A5"
+    surface_color: "#DCE8F5"
+    anchor_x: 0.50
+    anchor_y: 0.18
+    order: 2
+  - id: "collections-and-access"
+    label_zh: "集合与访问域"
+    label_en: "Collections and Access"
+    description_zh: "理解序列、列表、元组、字典、集合以及索引、切片和可变性。"
+    description_en: "Understand sequences, lists, tuples, dictionaries, sets, indexing, slicing, and mutability."
+    color: "#3F866C"
+    surface_color: "#D9EDE3"
+    anchor_x: 0.79
+    anchor_y: 0.30
+    order: 3
+  - id: "control-flow"
+    label_zh: "控制流域"
+    label_en: "Control Flow"
+    description_zh: "理解条件分支、循环、迭代以及 break、continue 和列表推导式。"
+    description_en: "Understand conditional branches, loops, iteration, and break, continue, and list comprehensions."
+    color: "#9A5E82"
+    surface_color: "#EEDDE8"
+    anchor_x: 0.77
+    anchor_y: 0.69
+    order: 4
+  - id: "functions-and-modules"
+    label_zh: "函数与模块域"
+    label_en: "Functions and Modules"
+    description_zh: "理解函数定义与调用、参数、返回值、作用域、模块和导入。"
+    description_en: "Understand function definitions and calls, parameters, return values, scope, modules, and imports."
+    color: "#705FA3"
+    surface_color: "#E6E0F3"
+    anchor_x: 0.46
+    anchor_y: 0.79
+    order: 5
+  - id: "errors-files-and-classes"
+    label_zh: "调试与工程域"
+    label_en: "Errors, Files and Classes"
+    description_zh: "理解 traceback、调试、文件读写、类与实例以及常见 Python 异常和误解。"
+    description_en: "Understand tracebacks, debugging, file I/O, classes and instances, and common Python exceptions and misconceptions."
+    color: "#AD554F"
+    surface_color: "#F2DDDB"
+    anchor_x: 0.18
+    anchor_y: 0.66
+    order: 6

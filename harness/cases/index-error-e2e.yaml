@@ -1,0 +1,20 @@
+id: index-error-e2e
+scenario: Python list IndexError learning chain
+base_url_env: REA_BASE_URL
+required_flow:
+  - POST /api/session/start
+  - POST /api/session/message
+  - GET /api/session/{id}/evidence
+required_skill: student-learning/retrieve-first-gate
+required_kg_path:
+  - Concept:list
+  - Concept:index
+  - Concept:zero_based_index
+  - ErrorType:IndexError
+required_rag_source:
+  source: python-official-docs
+  chunk_id: python-list-index-001
+required_evidence:
+  cognitive_gate: retrieval
+  direct_answer_given: false
+  teach_back: required

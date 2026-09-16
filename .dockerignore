@@ -1,0 +1,19 @@
+.git
+.tools
+frontend/node_modules
+frontend/dist
+frontend/src/.umi*
+services/api-gateway-go/responsible-api
+services/api-gateway-go/*.db
+**/__pycache__
+**/.pytest_cache
+**/*.pyc
+*.log
+
+# Local tunnel tooling and editable diagram sources are not part of the service.
+natapp.exe
+natapp.err.log
+natapp.log
+run_natapp.bat
+*.drawio
+*.drawio*.pdf

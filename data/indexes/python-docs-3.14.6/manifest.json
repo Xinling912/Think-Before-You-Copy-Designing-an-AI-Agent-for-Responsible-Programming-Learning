@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "retrieval_mode": "semantic-vector-rerank",
+  "backend": "faiss-flat-ip",
+  "version": "python-docs-3.14.6",
+  "source_ids": [
+    "python-docs-3.14.6"
+  ],
+  "source_counts": {
+    "python-docs-3.14.6": 169
+  },
+  "embedding_provider": "dashscope",
+  "embedding_model": "text-embedding-v4",
+  "dimensions": 1024,
+  "document_count": 169,
+  "files": {
+    "faiss": "data/indexes/python-docs-3.14.6/faiss.index",
+    "docstore": "data/indexes/python-docs-3.14.6/docstore.jsonl"
+  }
+}

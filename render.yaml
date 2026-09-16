@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: eduagent-demo
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: DASHSCOPE_API_KEY
+        sync: false
+      - key: APP_MODE
+        value: demo
+      - key: SQLITE_BACKUP_INTERVAL_SECONDS
+        value: "86400"
+      - key: SQLITE_BACKUP_RETENTION
+        value: "1"

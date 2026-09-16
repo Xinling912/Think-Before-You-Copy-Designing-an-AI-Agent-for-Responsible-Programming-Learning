@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "retrieval_mode": "semantic-vector-rerank",
+  "backend": "faiss-flat-ip",
+  "version": "runoob-python3",
+  "source_ids": [
+    "runoob-python3"
+  ],
+  "source_counts": {
+    "runoob-python3": 1330
+  },
+  "embedding_provider": "dashscope",
+  "embedding_model": "text-embedding-v4",
+  "dimensions": 1024,
+  "document_count": 1330,
+  "files": {
+    "faiss": "data/indexes/runoob-python3/faiss.index",
+    "docstore": "data/indexes/runoob-python3/docstore.jsonl"
+  }
+}

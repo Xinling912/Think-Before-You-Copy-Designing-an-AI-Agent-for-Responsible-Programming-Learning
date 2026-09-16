@@ -1,0 +1,6 @@
+﻿Theme,Representative_Codes,Participant_Count,Participants,Representative_Quote_EN,Quote_Participant
+Clear conceptual explanation and debugging support,Clear explanations; Conceptual understanding; Concrete examples,6,"P1, P2, P3, P4, P5, P6","The agent not only identified my problem, but also explained the underlying principle so I could understand how to improve.",P3
+Knowledge organization and evidence navigation,Knowledge organization; Concept relationships; Learning path,6,"P1, P2, P3, P4, P5, P6",The knowledge graph links related concepts and helps learners quickly build a clear knowledge framework.,P1
+Guided and adaptive tutoring,Guided learning; Adaptive support; Confidence calibration,4,"P1, P4, P5, P6",The agent used concrete examples to guide me step by step instead of presenting only abstract concepts.,P5
+Interaction and localization friction,Language mismatch; Need reading guidance; Unnecessary continuation,5,"P2, P3, P4, P5, P6","The explanation was clear, but it replied in English in a Chinese-language context.",P2
+Practice and personalization requests,Practice generation; Weakness-targeted support,1,P1,I hope it can generate coding tasks based on my errors and weaknesses so that I can practise and consolidate the concepts.,P1

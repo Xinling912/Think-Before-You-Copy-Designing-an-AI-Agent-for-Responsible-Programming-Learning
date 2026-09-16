@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkresponsible_edu_agent_frontend=self.webpackChunkresponsible_edu_agent_frontend||[]).push([[390],{96390:function(E,n,t){t.r(n),t.d(n,{default:function(){return s}});var d=t(67294),e=t(61172),u=t(85893);function s(){var o=(0,e.useOutletContext)();return(0,u.jsx)(e.Outlet,{context:o})}}}]);

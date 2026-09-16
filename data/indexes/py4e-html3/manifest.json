@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "retrieval_mode": "semantic-vector-rerank",
+  "backend": "faiss-flat-ip",
+  "version": "py4e-html3",
+  "source_ids": [
+    "py4e-html3"
+  ],
+  "source_counts": {
+    "py4e-html3": 275
+  },
+  "embedding_provider": "dashscope",
+  "embedding_model": "text-embedding-v4",
+  "dimensions": 1024,
+  "document_count": 275,
+  "files": {
+    "faiss": "data/indexes/py4e-html3/faiss.index",
+    "docstore": "data/indexes/py4e-html3/docstore.jsonl"
+  }
+}

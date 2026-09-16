@@ -1,0 +1,14 @@
+﻿Scale,Item,Theme Label,Question,N,Mean,SD,1,2,3,4,5,Negative % (1-2),Neutral % (3),Positive % (4-5)
+B,B1-B4,Dependency behaviors,Behavioral dependency patterns when using generative AI for programming.,160,3.888,1.105,5,19,20,61,55,0.15,0.125,0.725
+B,B5-B8,Negative consequences,"Concerns, reduced confidence, difficulty without AI, and perceived problem-solving impact.",160,3.344,1.327,18,29,32,42,39,0.29375,0.2,0.50625
+C,C1,Perceived usefulness,Perceived usefulness of AI tools for programming learning.,200,4.32,0.788,0,9,13,83,95,0.045,0.065,0.89
+C,C2,Responsible risks,"Perceived educational, social, transferable-skill, and over-reliance risks.",160,2.862,1.301,26,48,29,36,21,0.4625,0.18125,0.35625
+C,C3.1,Helpfulness,AI tools are helpful for programming learning.,40,4.4,0.841,1,0,3,14,22,0.025,0.075,0.9
+C,C3.2,Continued use,Intention to continue using AI tools for programming learning.,40,4.45,0.677,0,0,4,14,22,0.0,0.1,0.9
+C,C3.3,Frequent use,Intention to use AI tools frequently for programming learning.,40,4.575,0.636,0,0,3,11,26,0.0,0.075,0.925
+C,C3.4,Recommendation,Willingness to recommend AI tools to peers for programming learning.,40,4.6,0.672,0,1,1,11,27,0.025,0.025,0.95
+C,C4.1,Correct code,AI support for correcting code.,40,4.375,0.807,0,2,2,15,21,0.05,0.05,0.9
+C,C4.2,Answer questions,AI support for answering programming questions.,40,4.3,0.966,1,1,5,11,22,0.05,0.125,0.825
+C,C4.3,Code examples,AI support for providing code examples.,40,4.325,0.859,1,0,4,15,20,0.025,0.1,0.875
+C,C4.4,Advice/resources,AI support for programming advice and learning resources.,40,4.25,0.954,1,1,5,13,20,0.05,0.125,0.825
+C,C4.5,Explain concepts,AI support for explaining programming concepts.,40,4.525,0.64,0,0,3,13,24,0.0,0.075,0.925

@@ -1,0 +1,25 @@
+services:
+  responsible-edu-agent:
+    build:
+      context: .
+      args:
+        BASE_IMAGE_REGISTRY: ${BASE_IMAGE_REGISTRY:-docker.1ms.run}
+    image: responsible-edu-agent:dev
+    container_name: responsible-edu-agent
+    env_file:
+      - .env
+    environment:
+      DASHSCOPE_API_KEY: ${DASHSCOPE_API_KEY:?Set DASHSCOPE_API_KEY in .env before running docker compose.}
+      DASHSCOPE_CHAT_MODEL: ${DASHSCOPE_CHAT_MODEL:-qwen3.7-max}
+      DASHSCOPE_EMBED_MODEL: ${DASHSCOPE_EMBED_MODEL:-text-embedding-v4}
+      DASHSCOPE_EMBED_DIM: ${DASHSCOPE_EMBED_DIM:-1024}
+      DASHSCOPE_RERANK_MODEL: ${DASHSCOPE_RERANK_MODEL:-qwen3-rerank}
+      APP_MODE: ${APP_MODE:-development}
+      STUDY_ADMIN_PASSWORD: ${STUDY_ADMIN_PASSWORD:-}
+      SQLITE_BACKUP_INTERVAL_SECONDS: ${SQLITE_BACKUP_INTERVAL_SECONDS:-86400}
+      SQLITE_BACKUP_RETENTION: ${SQLITE_BACKUP_RETENTION:-7}
+    ports:
+      - "${REA_PORT:-18081}:8080"
+    volumes:
+      - ./data/runtime:/app/runtime
+    restart: unless-stopped

@@ -1,0 +1,98 @@
+syntax = "v1"
+
+info (
+	title: "ResponsibleEduAgent API Gateway"
+	desc:  "Single-port Go gateway for ResponsibleEduAgent MVP"
+)
+
+service responsible-api {
+	@handler health
+	get /api/health
+
+	@handler skills
+	get /api/skills
+
+	@handler kgPath
+	get /api/kg/path
+
+	@handler kgOverview
+	get /api/kg/overview
+
+	@handler kgCandidates
+	get /api/kg/candidates
+
+	@handler kgCandidateReview
+	post /api/kg/candidates/:id/review
+
+	@handler learnerProfile
+	get /api/learner/profile
+
+	@handler testTopics
+	get /api/tests/topics
+
+	@handler testQuestion
+	post /api/tests/question
+
+	@handler reloadTestQuestion
+	get /api/tests/question/:id
+
+	@handler testAnswer
+	post /api/tests/answer
+
+	@handler tokenBudget
+	get /api/token-budget
+
+	@handler resetTokenBudget
+	post /api/token-budget/reset
+
+	@handler corpusSummary
+	get /api/corpus/summary
+
+	@handler corpusChunks
+	get /api/corpus/chunks
+
+	@handler corpusChunkDetail
+	get /api/corpus/chunks/:id
+
+	@handler corpusGlossary
+	get /api/corpus/glossary
+
+	@handler sessionStart
+	post /api/session/start
+
+	@handler sessionMessage
+	post /api/session/message
+
+	@handler sessionMessageStream
+	post /api/session/message/stream
+
+	@handler sessions
+	get /api/sessions
+
+	@handler sessionDetail
+	get /api/session/:id
+
+	@handler deleteSession
+	delete /api/session/:id
+
+	@handler sessionEvidence
+	get /api/session/:id/evidence
+
+	@handler harnessSuites
+	get /api/harness/suites
+
+	@handler harnessCases
+	get /api/harness/cases
+
+	@handler harnessCaseCompile
+	post /api/harness/cases/compile
+
+	@handler harnessCaseConfirm
+	post /api/harness/cases/:case_id/confirm
+
+	@handler harnessCaseDelete
+	delete /api/harness/cases/:case_id
+
+	@handler harnessRun
+	post /api/harness/run
+}

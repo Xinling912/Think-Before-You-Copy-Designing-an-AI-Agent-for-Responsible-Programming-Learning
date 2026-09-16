@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ResponsibleEduAgent Pilot Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="survey-card" aria-live="polite">
+        <div class="topline">
+          <span id="stepLabel">Pilot Study</span>
+          <span id="progressLabel">0/0</span>
+        </div>
+        <div id="screen" class="screen"></div>
+        <footer class="actions">
+          <p id="validationMessage" class="validation" role="status"></p>
+          <p id="saveStatus" class="save-status" role="status"></p>
+          <button id="nextButton" class="primary" type="button" disabled>Continue</button>
+        </footer>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>

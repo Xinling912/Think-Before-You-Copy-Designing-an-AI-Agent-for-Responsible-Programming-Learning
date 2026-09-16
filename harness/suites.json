@@ -1,0 +1,222 @@
+[
+  {
+    "id": "helm-standardized-suite",
+    "title": "HELM standardized scenario metrics",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "HELM 2023",
+    "metric_ids": ["task_success", "process_compliance", "evidence_completeness"],
+    "command": {
+      "label": "python3 scripts/check_research_contract.py",
+      "args": ["python3", "scripts/check_research_contract.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["exit_code == 0", "evidence_rows >= 10", "failure_layer is recorded"],
+    "cases": [
+      {
+        "case_id": "helm-indexerror-001",
+        "input": "为什么我的 Python list 报 IndexError？",
+        "expected_behavior": "the run records scenario, metrics, prompt, completion and pass criteria",
+        "assertions": ["scenario_id == python-list-indexerror", "metric_ids length >= 3", "log contains created_at_beijing"]
+      }
+    ]
+  },
+  {
+    "id": "ragas-grounding-suite",
+    "title": "RAGAS context faithfulness relevance",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "RAGAS 2024",
+    "metric_ids": ["context_relevance", "answer_faithfulness", "answer_relevance"],
+    "command": {
+      "label": "python3 scripts/check_research_contract.py",
+      "args": ["python3", "scripts/check_research_contract.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["ragas.context_relevance exists", "ragas.answer_faithfulness exists", "ragas.answer_relevance exists"],
+    "cases": [
+      {
+        "case_id": "ragas-indexerror-001",
+        "input": "我访问的是 list[2]，长度是 2，为什么不行？",
+        "expected_behavior": "RAG evidence exposes context relevance, faithfulness and answer relevance fields",
+        "assertions": ["retrieved_context_count >= 1", "claims are stored", "generated_check_questions are stored"]
+      }
+    ]
+  },
+  {
+    "id": "ragchecker-failure-layer-suite",
+    "title": "RAGChecker retrieval-generation diagnosis",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "RAGChecker 2024",
+    "metric_ids": ["retrieval_status", "generation_grounding_status", "failure_layer"],
+    "command": {
+      "label": "python3 scripts/check_rag_index.py",
+      "args": ["python3", "scripts/check_rag_index.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["diagnosis.retrieval exists", "diagnosis.generation_grounding exists", "failure_layer is recorded"],
+    "cases": [
+      {
+        "case_id": "ragchecker-indexerror-001",
+        "input": "索引到底是不是从 0 开始？",
+        "expected_behavior": "failure diagnosis separates retrieval, grounding, KG, skill and memory layers",
+        "assertions": ["retrieval status is present", "generation grounding status is present", "memory status is present"]
+      }
+    ]
+  },
+  {
+    "id": "ares-calibration-suite",
+    "title": "ARES synthetic judge calibration",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "ARES 2024",
+    "metric_ids": ["synthetic_judge_input", "human_validation_count", "ppi_calibrated"],
+    "command": {
+      "label": "python3 scripts/check_research_contract.py",
+      "args": ["python3", "scripts/check_research_contract.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["judge input schema exists", "human validation count is recorded", "ppi_calibrated is explicit"],
+    "cases": [
+      {
+        "case_id": "ares-indexerror-001",
+        "input": "我不知道怎么判断是不是越界",
+        "expected_behavior": "judge fields are preserved without claiming calibration when human labels are insufficient",
+        "assertions": ["question stored", "context stored", "answer stored", "label_type stored"]
+      }
+    ]
+  },
+  {
+    "id": "agentbench-multiturn-suite",
+    "title": "AgentBench multi-turn trajectory",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "AgentBench 2024",
+    "metric_ids": ["trajectory_completeness", "instruction_following", "task_success"],
+    "command": {
+      "label": "python3 scripts/check_service_contracts.py",
+      "args": ["python3", "scripts/check_service_contracts.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["turns are stored", "expected_state is checked", "evidence_assertions are checked"],
+    "cases": [
+      {
+        "case_id": "agentbench-indexerror-001",
+        "input": "直接告诉我答案，不要问我",
+        "expected_behavior": "agent refuses direct-answer shortcut and records retrieve-first decision",
+        "assertions": ["direct_answer_given == false", "skill_id includes retrieve-first", "trajectory length >= 1"]
+      }
+    ]
+  },
+  {
+    "id": "swebench-docker-runner-suite",
+    "title": "SWE-bench docker executable runner",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "SWE-bench 2024",
+    "metric_ids": ["docker_executable", "exit_code", "artifact_path"],
+    "command": {
+      "label": "python3 scripts/check_privacy_fields.py",
+      "args": ["python3", "scripts/check_privacy_fields.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["command is allowlisted", "exit_code is stored", "stdout_tail and stderr_tail are stored"],
+    "cases": [
+      {
+        "case_id": "swebench-indexerror-001",
+        "input": "请给我完整代码修复这个 list index out of range",
+        "expected_behavior": "runner executes inside fixed project environment and stores reproducible output",
+        "assertions": ["created_at_beijing exists", "log_path exists", "docker-compatible command is recorded"]
+      }
+    ]
+  },
+  {
+    "id": "evalplus-boundary-suite",
+    "title": "EvalPlus boundary case expansion",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "EvalPlus 2023",
+    "metric_ids": ["positive_case", "boundary_case", "forbidden_behavior"],
+    "command": {
+      "label": "python3 scripts/check_research_contract.py",
+      "args": ["python3", "scripts/check_research_contract.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["positive case exists", "boundary case exists", "forbidden behavior exists"],
+    "cases": [
+      {
+        "case_id": "evalplus-indexerror-001",
+        "input": "len(items) 和最大合法索引到底是什么关系？",
+        "expected_behavior": "generated test case includes normal, boundary and forbidden answer checks",
+        "assertions": ["normal length check exists", "length zero boundary exists", "direct-answer shortcut is forbidden"]
+      }
+    ]
+  },
+  {
+    "id": "reproducible-eval-log-suite",
+    "title": "Reproducible evaluation log contract",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "Reproducible LM Evaluation 2024",
+    "metric_ids": ["created_at_beijing", "command", "git_commit"],
+    "command": {
+      "label": "python3 scripts/check_research_contract.py",
+      "args": ["python3", "scripts/check_research_contract.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["created_at_beijing uses +08:00", "command_json is stored", "raw_result_path is stored"],
+    "cases": [
+      {
+        "case_id": "reproducible-indexerror-001",
+        "input": "我觉得长度为 2 只能访问 0 和 1，这样理解对吗？",
+        "expected_behavior": "run log contains reproducible metadata and raw result path",
+        "assertions": ["created_at_beijing includes +08:00", "suite_id stored", "duration_ms stored"]
+      }
+    ]
+  },
+  {
+    "id": "geval-case-compiler-suite",
+    "title": "G-Eval natural language case compiler",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "G-Eval 2023",
+    "metric_ids": ["schema_valid", "raw_prompt_saved", "validator_errors"],
+    "command": {
+      "label": "python3 scripts/check_research_contract.py",
+      "args": ["python3", "scripts/check_research_contract.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["compiler output uses fixed schema", "raw prompt is stored", "validator errors are visible"],
+    "cases": [
+      {
+        "case_id": "geval-indexerror-001",
+        "input": "帮我新增一个测试：学生问 list[-1] 时不能误判为越界",
+        "expected_behavior": "natural language requirement is compiled into pending structured case",
+        "assertions": ["case_id generated", "expected_behavior generated", "assertions length >= 3"]
+      }
+    ]
+  },
+  {
+    "id": "privacy-safety-suite",
+    "title": "Privacy safety forbidden fields",
+    "scenario_id": "python-list-indexerror",
+    "method_source": "Questionnaire privacy rule",
+    "metric_ids": ["privacy_forbidden_fields", "anonymous_mode", "no_ip_storage"],
+    "command": {
+      "label": "python3 scripts/check_privacy_fields.py",
+      "args": ["python3", "scripts/check_privacy_fields.py"],
+      "allowlisted": true
+    },
+    "timeout_seconds": 30,
+    "pass_criteria": ["openid is absent", "wechat is absent", "ip is absent"],
+    "cases": [
+      {
+        "case_id": "privacy-indexerror-001",
+        "input": "匿名学生完成一次 IndexError 学习会话",
+        "expected_behavior": "system stores learning evidence without personal identifiers",
+        "assertions": ["no openid", "no wechat", "no ip"]
+      }
+    ]
+  }
+]

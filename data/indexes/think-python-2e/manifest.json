@@ -1,0 +1,20 @@
+{
+  "schema_version": 3,
+  "retrieval_mode": "semantic-vector-rerank",
+  "backend": "faiss-flat-ip",
+  "version": "think-python-2e",
+  "source_ids": [
+    "think-python-2e"
+  ],
+  "source_counts": {
+    "think-python-2e": 380
+  },
+  "embedding_provider": "dashscope",
+  "embedding_model": "text-embedding-v4",
+  "dimensions": 1024,
+  "document_count": 380,
+  "files": {
+    "faiss": "data/indexes/think-python-2e/faiss.index",
+    "docstore": "data/indexes/think-python-2e/docstore.jsonl"
+  }
+}
